@@ -42,6 +42,7 @@ header:hover, header.scrolled {
 	position: absolute;
 	left: 0;
 	top: 150%;
+	background-color: #fff;
 	visibility: hidden;
 	padding-left: 0;
 	opacity: 0;
@@ -52,7 +53,7 @@ header:hover, header.scrolled {
 #top-list-other > ul > li {
 	white-space: nowrap;
 	line-height: 1.75em;
-	list-style-type: disc;
+	list-style-type: none;
 }
 
 #top-list-other:hover > ul {
@@ -131,12 +132,12 @@ header a:visited {
 
 /* Main */
 #main {
-	width: 51em;
-	margin-left: 2em;
+	width: 50em;
+	margin-right: 2em;
 	padding-left: 1em;
 	background-color: #fff;
 	margin-top: 75px;
-	float: left;
+	float: right;
 }
 
 /* Reset Tag A */
@@ -149,3 +150,59 @@ header a:visited {
 	color: #0088ff;
 	text-decoration: underline;
 }
+
+
+/* Publications */
+#publications {
+	width: 50em;
+	margin-right: 2em;
+	padding-left: 1em;
+	background-color: #fff;
+	margin-top: 75px;
+	float: right;
+}
+
+#pub-index {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+
+#pub-index > li {
+	display: inline;
+}
+
+/* Dash */
+.dash {
+	padding-left: 1em;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.dash > img {
+	width: 15em;
+}
+
+.dash > p {
+	width: 30em;
+}
+
+.dash > p > span {
+	color: #2222ff;
+}
+
+.dash > p a.b, .dash > p a.b:visited {
+	color: #0088ff;
+}
+
+.dash > p a.r, .dash > p a.r:visited {
+	color: #ff2600;
+}
+
+/* Reset Tag A */
+#publications a:not([class]), #publications a:not([class]):visited  {
+	color: #0088ff;
+	text-decoration: underline;
+}
+
