@@ -14,8 +14,8 @@ header {
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
 }
 
-header:hover {
-	transition: background-color 0.3s ease;
+header:hover, header.scrolled {
+	transition: background-color 0.5s ease;
 	background-color: #ffffff;
 }
 
@@ -74,6 +74,11 @@ header a {
 	text-decoration: none;
 }
 
+header a:visited {
+	color: #2b2b3b;
+	text-decoration: none;
+}
+
 /* Underline Animation*/
 .hover-line {
 	position: relative;
@@ -99,16 +104,48 @@ header a {
 #aside {
 	width: 20em;
 	height: 32em;
+	margin-left: 2em;
 	background-color: #fff;
 	margin-top: 75px;
+	float: left;
 	text-align: center;
 }
 
 #aside > img {
 	width: 15em;
 	margin-left: 2.5em;
+	margin-right: 2.5em;
 	margin-top: 20px;
 }
-#aside > p {
 
+/* Reset Tag A */
+#aside a {
+	color: #0088ff;
+	text-decoration: underline;
+}
+
+#aside a:visited {
+	color: #0088ff;
+	text-decoration: underline;
+}
+
+/* Main */
+#main {
+	width: 51em;
+	margin-left: 2em;
+	padding-left: 1em;
+	background-color: #fff;
+	margin-top: 75px;
+	float: left;
+}
+
+/* Reset Tag A */
+#main a {
+	color: #0088ff;
+	text-decoration: underline;
+}
+
+#main a:visited {
+	color: #0088ff;
+	text-decoration: underline;
 }
