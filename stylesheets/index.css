@@ -101,14 +101,23 @@ header a:visited {
 	width: 100%;
 }
 
+/* Container */
+
+.container {
+	display: flex;
+	box-sizing: border-box;
+	gap: 20px;
+}
+
 /* Aside */
 #aside {
-	width: 20em;
+	width: calc(20em + 40px);
 	height: 32em;
-	margin-left: 2em;
+	margin-left: 20px;
+	margin-right: 20px;
+	box-sizing: border-box;
 	background-color: #fff;
 	margin-top: 75px;
-	float: left;
 	text-align: center;
 }
 
@@ -132,21 +141,28 @@ header a:visited {
 
 /* Main */
 #main {
-	width: 50em;
-	margin-right: 2em;
-	padding-left: 1em;
-	background-color: #fff;
+	flex-grow: 1;
+	margin-left: 20px;
+	margin-right: 20px;
+	box-sizing: border-box;
 	margin-top: 75px;
-	float: right;
+	background-color: #fff;
+}
+
+/* Welcome */
+#welcome {
+	width: 90%;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 /* Reset Tag A */
-#main a {
+#welcome a {
 	color: #0088ff;
 	text-decoration: underline;
 }
 
-#main a:visited {
+#welcome a:visited {
 	color: #0088ff;
 	text-decoration: underline;
 }
@@ -154,12 +170,10 @@ header a:visited {
 
 /* Publications */
 #publications {
-	width: 50em;
-	margin-right: 2em;
-	padding-left: 1em;
-	background-color: #fff;
-	margin-top: 75px;
-	float: right;
+	width: 90%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 20px;
 }
 
 #pub-index {
