@@ -1,0 +1,19 @@
+@media only screen and (max-width: 768px) {
+	header {
+		display: none;
+	}
+
+	.container {
+		margin-top: 20px;
+		width: 100vw;
+	}
+
+	#aside {
+		display: block;
+		text-align: center;
+	}
+
+	#main {
+
+	}
+}
