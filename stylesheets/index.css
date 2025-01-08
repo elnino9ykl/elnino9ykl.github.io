@@ -4,7 +4,6 @@ body {
 	background-color: #c8edf8;
 }
 
-
 /* Reset Tag A */
 #aside a {
 	color: #0088ff;
@@ -27,7 +26,7 @@ body {
 	text-decoration: underline;
 }
 
-
+/* Publications p */
 .dash > p > span {
 	color: #2222ff;
 }
