@@ -1307,9 +1307,14 @@
 
 	// CSS 其他尺寸动态适配
 	document.addEventListener("DOMContentLoaded", function (event) {
-		const headerHeight = document.querySelector("header").offsetHeight;
-		const rootElement = document.documentElement;
-		rootElement.style.setProperty("--container-marginTop", `calc(${headerHeight}px + 1em)`);
+		function updateHeaderMargin() {
+			const headerHeight = document.querySelector("header").offsetHeight;
+			const rootElement = document.documentElement;
+			rootElement.style.setProperty("--container-marginTop", `calc(${headerHeight}px + 1em)`);
+		}
+
+		updateHeaderMargin();
+		window.addEventListener("resize", updateHeaderMargin);
 	});
 
 	// Publications 部分格式化
