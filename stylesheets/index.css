@@ -56,7 +56,6 @@
 	/* Dash */
 	.dash {
 		padding-left: 5vw;
-		border-bottom: #fff 1px solid;
 		margin-top: 1em;
 		justify-content: space-evenly;
 		align-items: center;
@@ -138,7 +137,6 @@
 	/* Dash */
 	.dash {
 		padding-left: 1em;
-		border-top: #2b2b3b 1px solid;
 		display: flex;
 		justify-content: space-evenly;
 		align-items: center;
@@ -215,7 +213,6 @@
 	/* Dash */
 	.dash {
 		padding-left: 1em;
-		border-top: #2b2b3b 1px solid;
 		display: flex;
 		justify-content: space-evenly;
 		align-items: center;
