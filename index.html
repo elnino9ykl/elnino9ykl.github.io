@@ -12,6 +12,7 @@
 <header id="top">
 	<div id="top-info">Kailun Yang 杨恺伦</div>
 	<ul id="top-list">
+		<span>导航</span>
 		<li><a href="index.html" class="hover-line">首页 (Index)</a></li>
 		<li><a href="gallery.html" class="hover-line">课题组风采 (Gallery)</a></li>
 		<li><a href="team.html" class="hover-line">课题组团队 (Team)</a></li>
@@ -795,25 +796,34 @@
 
 <script>
 	// CSS Navbar 背景色滚动类
-	window.addEventListener('scroll', function () {
-		var nav = document.getElementById('top');
+	window.addEventListener("scroll", function () {
+		const nav = document.getElementById("top");
 		if (window.scrollY > 0) {
-			nav.classList.add('scrolled');
+			nav.classList.add("scrolled");
 		} else {
-			nav.classList.remove('scrolled');
+			nav.classList.remove("scrolled");
+		}
+	});
+
+	// CSS Navbar 点击菜单
+	document.getElementById("top-list").addEventListener("click", function () {
+		const nav = document.getElementById("top");
+		if (nav.classList.contains("open")) {
+			nav.classList.remove("open");
+		} else {
+			nav.classList.add("open")
 		}
 	});
 
 	// Publications 部分格式化
 	const pubDivs = document.getElementsByClassName("dash");
-	for (originalDiv of pubDivs) {
+	for (const originalDiv of pubDivs) {
 		const newDiv = originalDiv;
 		const textAndLinks = newDiv.querySelector("p").innerHTML;
-		const processedText = textAndLinks
+		newDiv.querySelector("p").innerHTML = textAndLinks
 				.replace(/<a style="color:MidnightBlue">(.*?)<\/a>/sg, '<span>$1</span>')
 				.replace(/<a style="color:BLUE" href="(.*?)">(.*?)<\/a>/g, '<a class="b" href="$1">$2</a>')
 				.replace(/<b><a style="color:orangered" href="(.*?)">(.*?)<\/a><\/b>/g, '<b><a class="r" href="$1">$2</a></b>');
-		newDiv.querySelector("p").innerHTML = processedText;
 
 		originalDiv.parentNode.replaceChild(newDiv, originalDiv);
 	}
