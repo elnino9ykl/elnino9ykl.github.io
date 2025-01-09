@@ -1,4 +1,158 @@
-/* Details */
+/* 适配手机 */
+@media only screen and (max-width: 768px) {
+	.container {
+		margin-top: 75px;
+		width: 100vw;
+	}
+
+	#aside {
+		width: 100vw;
+		text-align: center;
+	}
+
+	#main {
+		width: 100vw;
+	}
+
+	/* Aside */
+	#aside > img {
+		width: 20vw;
+		margin-left: 5vw;
+		float: left;
+	}
+
+	/* Main */
+	#welcome {
+		width: 90vw;
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+
+	#publications {
+		width: 90vw;
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+
+	/* Publications */
+	#pub-index {
+		height: 5em;
+		padding-left: 5vw;
+		padding-right: 5vw;
+		list-style: none;
+	}
+
+	#pub-index > li {
+		width: 20vw;
+		height: 1.5em;
+		text-align: center;
+		float: left;
+	}
+
+	/* Dash */
+	.dash {
+		padding-left: 5vw;
+		border-bottom: #fff 1px solid;
+		margin-top: 1em;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.dash > img {
+		width: 80vw;
+	}
+
+	.dash > p {
+		width: 80vw;
+	}
+}
+
+
+/* 适配电脑 */
+@media only screen and (min-width: 1025px) {
+	.container {
+		display: flex;
+		box-sizing: border-box;
+		gap: 20px;
+	}
+
+	#aside {
+		width: calc(20em + 40px);
+		height: 32em;
+		margin-left: 20px;
+		margin-right: 20px;
+		box-sizing: border-box;
+		background-color: #fff;
+		margin-top: 75px;
+		text-align: center;
+	}
+
+	#main {
+		flex-grow: 1;
+		margin-left: 20px;
+		margin-right: 20px;
+		box-sizing: border-box;
+		margin-top: 75px;
+		background-color: #fff;
+	}
+
+	/* Aside */
+	#aside > img {
+		width: 15em;
+		margin-left: 2.5em;
+		margin-right: 2.5em;
+		margin-top: 20px;
+	}
+
+	/* Main */
+	#welcome {
+		width: 90%;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	#publications {
+		width: 90%;
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-top: 20px;
+	}
+
+	/* Publications */
+	#pub-index {
+		list-style: none;
+		display: flex;
+		width: calc(100% - 2px);
+		flex-flow: wrap;
+		gap: 20px;
+	}
+
+	#pub-index > li {
+		display: inline;
+	}
+
+	/* Dash */
+	.dash {
+		padding-left: 1em;
+		border-top: #2b2b3b 1px solid;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.dash > img {
+		width: 30%;
+	}
+
+	.dash > p {
+		width: 60%;
+	}
+}
+
+/* 适配其他设备 */
+
+
+/* 通用 */
 
 body {
 	background-color: #c8edf8;
