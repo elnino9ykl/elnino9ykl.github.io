@@ -16,6 +16,10 @@
 		background-color: #ffffff;
 	}
 
+	header > span {
+		display: none;
+	}
+
 	#top-info {
 		color: #2b2b3b;
 		font-size: 1.5em;
@@ -25,10 +29,6 @@
 		list-style: none;
 		display: flex;
 		gap: 20px;
-	}
-
-	#top-list > span {
-		display: none;
 	}
 
 	#top-list > li {
@@ -154,6 +154,8 @@
 	#pub-index {
 		list-style: none;
 		display: flex;
+		width: calc(100% - 2px);
+		flex-flow: wrap;
 		gap: 20px;
 	}
 

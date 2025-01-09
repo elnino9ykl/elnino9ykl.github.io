@@ -11,8 +11,8 @@
 <body>
 <header id="top">
 	<div id="top-info">Kailun Yang 杨恺伦</div>
+	<span id="top-btn">导航</span>
 	<ul id="top-list">
-		<span>导航</span>
 		<li><a href="index.html" class="hover-line">首页 (Index)</a></li>
 		<li><a href="gallery.html" class="hover-line">课题组风采 (Gallery)</a></li>
 		<li><a href="team.html" class="hover-line">课题组团队 (Team)</a></li>
@@ -806,12 +806,12 @@
 	});
 
 	// CSS Navbar 点击菜单
-	document.getElementById("top-list").addEventListener("click", function () {
+	document.getElementById("top-btn").addEventListener("click", function () {
 		const nav = document.getElementById("top");
 		if (nav.classList.contains("open")) {
 			nav.classList.remove("open");
 		} else {
-			nav.classList.add("open")
+			nav.classList.add("open");
 		}
 	});
 
