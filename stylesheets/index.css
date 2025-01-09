@@ -15,6 +15,10 @@
 	}
 
 	/* Aside */
+	#aside {
+		min-height: 30vw;
+	}
+
 	#aside > img {
 		width: 20vw;
 		margin-left: 5vw;
@@ -150,7 +154,81 @@
 }
 
 /* 适配其他设备 */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	:root {
+		--container-marginTop: 75px;
+	}
 
+	.container {
+		margin-top: var(--container-marginTop);
+		width: 100vw;
+	}
+
+	#aside {
+		width: 90vw;
+		text-align: center;
+	}
+
+	#main {
+		width: 90vw;
+	}
+
+	/* Aside */
+	#aside {
+		/*min-height: 30vw;*/
+	}
+
+	#aside > img {
+		width: 20vw;
+		padding-left: 7.5vw;
+		padding-right: 2.5vw;
+		float: left;
+	}
+
+	/* Main */
+	#welcome {
+		width: 90vw;
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+
+	#publications {
+		width: 90vw;
+		padding-left: 5vw;
+		padding-right: 5vw;
+		padding-top: 20px;
+	}
+
+	/* Publications */
+	#pub-index {
+		list-style: none;
+		display: flex;
+		width: calc(90vw - 2px);
+		flex-flow: wrap;
+		gap: 20px;
+	}
+
+	#pub-index > li {
+		display: inline;
+	}
+
+	/* Dash */
+	.dash {
+		padding-left: 1em;
+		border-top: #2b2b3b 1px solid;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.dash > img {
+		width: 30%;
+	}
+
+	.dash > p {
+		width: 60%;
+	}
+}
 
 /* 通用 */
 
