@@ -1,12 +1,11 @@
 /* 适配手机 */
 @media only screen and (max-width: 768px) {
 	.container {
-		margin-top: 75px;
+		margin-top: 40px;
 		width: 90vw;
 		margin-left: calc(5vw - 1em);
 		margin-right: calc(5vw - 1em);
 		padding-top: 0.5em;
-		background-color: #fff;
 		overflow-x: hidden;
 	}
 
@@ -22,6 +21,7 @@
 	/* Aside */
 	#aside {
 		min-height: 8em;
+		font-size: 0.6em;
 	}
 
 	#aside > img {
@@ -46,7 +46,7 @@
 
 	/* Welcome */
 	#welcome > p {
-		text-indent: 2em;
+		font-size: 0.6em;
 	}
 
 	/* Publications */
@@ -54,6 +54,7 @@
 		height: 5em;
 		padding-left: 5vw;
 		padding-right: 5vw;
+		font-size: 0.6em;
 		list-style: none;
 	}
 
@@ -72,11 +73,12 @@
 	}
 
 	.dash > img {
-		width: 80vw;
+		width: 40vw;
 	}
 
 	.dash > p {
 		width: 80vw;
+		font-size: 0.6em;
 	}
 }
 
@@ -86,7 +88,6 @@
 	.container {
 		display: flex;
 		box-sizing: border-box;
-		gap: 20px;
 	}
 
 	#aside {
@@ -95,18 +96,14 @@
 		margin-left: 20px;
 		margin-right: 20px;
 		box-sizing: border-box;
-		background-color: #fff;
 		margin-top: 75px;
 		text-align: center;
 	}
 
 	#main {
 		flex-grow: 1;
-		margin-left: 20px;
-		margin-right: 20px;
 		box-sizing: border-box;
 		margin-top: 75px;
-		background-color: #fff;
 	}
 
 	/* Aside */
@@ -119,21 +116,19 @@
 
 	/* Main */
 	#welcome {
-		width: 90%;
-		padding-left: 5%;
+		width: 95%;
 		padding-right: 5%;
 	}
 
 	#publications {
-		width: 90%;
-		padding-left: 5%;
+		width: 95%;
 		padding-right: 5%;
 		padding-top: 20px;
 	}
 
 	/* Welcome */
 	#welcome > p {
-		text-indent: 2em;
+		/*text-indent: 2em;*/
 	}
 
 	/* Publications */
@@ -180,7 +175,6 @@
 		margin-left: calc(5vw - 1em);
 		margin-right: calc(5vw - 1em);
 		padding-top: 1em;
-		background-color: #fff;
 		overflow-x: hidden;
 	}
 
@@ -202,6 +196,7 @@
 		width: 20vw;
 		padding-left: 5vw;
 		padding-right: 5vw;
+		padding-bottom: 1em;
 		float: left;
 	}
 
@@ -217,7 +212,7 @@
 
 	/* Welcome */
 	#welcome > p {
-		text-indent: 2em;
+		/*text-indent: 2em;*/
 	}
 
 	/* Publications */
@@ -253,7 +248,7 @@
 /* 通用 */
 
 body {
-	background-color: #c8edf8;
+	background-color: #ffffff;
 }
 
 /* Reset Tag A */
