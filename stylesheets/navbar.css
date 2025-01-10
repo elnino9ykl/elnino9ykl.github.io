@@ -2,10 +2,12 @@
 @media only screen and (max-width: 768px) {
 	header {
 		top: 0;
+		left: 0;
+		right: 0;
 		display: flex;
 		flex-wrap: wrap;
 		position: fixed;
-		width: calc(100vw - 2em);
+		width: 100vw;
 		justify-content: space-evenly;
 		align-items: center;
 		box-shadow: 0 0 4px #000000a0;
@@ -110,9 +112,11 @@
 @media only screen and (min-width: 1025px) {
 	header {
 		top: 0;
+		left: 0;
+		right: 0;
 		display: flex;
 		position: fixed;
-		width: 100%;
+		width: 100vw;
 		justify-content: space-evenly;
 		align-items: center;
 		box-shadow: 0 0 4px #000000a0;
@@ -209,9 +213,11 @@
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 	header {
 		top: 0;
+		left: 0;
+		right: 0;
 		display: flex;
 		position: fixed;
-		width: calc(100vw - 2em);
+		width: 100vw;
 		justify-content: space-evenly;
 		align-items: center;
 		box-shadow: 0 0 4px #000000a0;
