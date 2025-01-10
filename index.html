@@ -1278,16 +1278,6 @@
 </div>
 
 <script>
-	// CSS Navbar 背景色滚动类
-	window.addEventListener("scroll", function () {
-		const nav = document.getElementById("top");
-		if (window.scrollY > 0) {
-			nav.classList.add("scrolled");
-		} else {
-			nav.classList.remove("scrolled");
-		}
-	});
-
 	// CSS Navbar 点击菜单
 	document.getElementById("top-btn").addEventListener("click", function () {
 		const nav = document.getElementById("top");
@@ -1298,6 +1288,7 @@
 		}
 	});
 
+	// CSS Navbar 点击按钮
 	document.querySelectorAll(".hover-line").forEach(element => {
 				element.addEventListener("click", function (event) {
 					document.getElementById("top").classList.remove("open");
