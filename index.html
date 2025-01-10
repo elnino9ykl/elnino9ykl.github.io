@@ -1301,7 +1301,7 @@
 		function updateHeaderMargin() {
 			const headerHeight = document.querySelector("header").offsetHeight;
 			const rootElement = document.documentElement;
-			rootElement.style.setProperty("--container-marginTop", `calc(${headerHeight}px + 1em)`);
+			rootElement.style.setProperty("--container-marginTop", headerHeight + "px");
 		}
 
 		updateHeaderMargin();
