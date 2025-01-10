@@ -285,6 +285,15 @@ body {
 	color: #2222ff;
 }
 
+.dash > p a.db, .dash > p a.db:visited {
+	color: #2222ff;
+	text-decoration: none;
+}
+
+.dash > p a.db:hover {
+	text-decoration: #2222ff 2px underline;
+}
+
 .dash > p a.b, .dash > p a.b:visited {
 	color: #0088ff;
 }
