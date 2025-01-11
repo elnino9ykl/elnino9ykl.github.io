@@ -34,8 +34,9 @@ for (const originalDiv of pubDivs) {
 	const textAndLinks = newDiv.querySelector("p").innerHTML;
 	newDiv.querySelector("p").innerHTML = textAndLinks
 		.replace(/<a style="color:MidnightBlue">(.*?)<\/a>/sg, '<span>$1</span>')
+		.replace(/<a style="color:BLUE">(.*?)<\/a>/sg, '<span>$1<span>')
 		.replace(/<a style="color:MidnightBlue" href="(.*?)">(.*?)<\/a>/sg, '<a class="db" href="$1">$2</a>')
-		.replace(/<a style="color:BLUE" href="(.*?)">(.*?)<\/a>/g, '<a class="b" href="$1">$2</a>')
+		.replace(/<a style="color:BLUE" href="([\s\S]*?)">(.*?)<\/a>/g, '<a class="b" href="$1">$2</a>')
 		.replace(/<b><a style="color:orangered" href="(.*?)">(.*?)<\/a><\/b>/g, '<b><a class="r" href="$1">$2</a></b>');
 
 	originalDiv.parentNode.replaceChild(newDiv, originalDiv);
