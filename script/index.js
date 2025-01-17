@@ -1,20 +1,3 @@
-// CSS Navbar 点击菜单
-document.getElementById("nav-btn").addEventListener("click", function () {
-	const nav = document.getElementById("nav");
-	if (nav.classList.contains("open")) {
-		nav.classList.remove("open");
-	} else {
-		nav.classList.add("open");
-	}
-});
-
-// CSS Navbar 点击按钮
-document.querySelectorAll(".hover-line").forEach(element => {
-	element.addEventListener("click", function (event) {
-		document.getElementById("nav").classList.remove("open");
-	})
-});
-
 // CSS 其他尺寸动态适配
 document.addEventListener("DOMContentLoaded", function (event) {
 	function updateHeaderMargin() {
