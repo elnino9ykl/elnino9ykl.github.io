@@ -214,7 +214,8 @@
 
 	/* Aside */
 	#aside {
-		/*min-height: 30vw;*/
+		width: 30vw;
+		margin-top: 1em;
 	}
 
 	#aside > img {
@@ -223,6 +224,18 @@
 		padding-right: 5vw;
 		padding-bottom: 1em;
 		float: left;
+	}
+
+	#aside > p {
+		font-size: 0.85em;
+		line-height: 0.5em;
+		width: 30vw;
+		text-align: center;
+		float: left;
+	}
+
+	#aside > p > #address {
+		display: none;
 	}
 
 	/* Main */
