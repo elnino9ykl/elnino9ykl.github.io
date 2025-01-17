@@ -20,7 +20,7 @@
 		background-color: #fffffff0;
 	}
 
-	header.open > #top-list {
+	header.open > #nav-list {
 		width: 80%;
 		padding-left: 10%;
 		padding-right: 10%;
@@ -31,7 +31,7 @@
 		visibility: visible;
 	}
 
-	header.open > #top-logo {
+	header.open > #nav-logo {
 		display: block;
 		width: 100%;
 		padding-left: 10%;
@@ -63,36 +63,36 @@
 		}
 	}
 
-	#top-info {
+	#nav-info {
 		color: #2b2b3b;
 		font-size: 1.5em;
 	}
 
-	#top-logo {
+	#nav-logo {
 		display: none;
 	}
 
-	#top-logo > img {
+	#nav-logo > img {
 		width: 2em;
 		height: 2em;
 	}
 
-	#top-list {
+	#nav-list {
 		display: none;
 		visibility: hidden;
 	}
 
-	#top-list > li {
+	#nav-list > li {
 		width: 100%;
 		border-top: #2b2b3b 1px solid;
 		display: block;
 	}
 
-	#top-list-other {
+	#nav-list-other {
 
 	}
 
-	#top-list-other > ul > li {
+	#nav-list-other > ul > li {
 		border-bottom: #2b2b3b 1px solid;
 	}
 
@@ -127,26 +127,26 @@
 		display: none;
 	}
 
-	#top-info {
+	#nav-info {
 		color: #2b2b3b;
 		font-size: 1.5em;
 	}
 
-	#top-list {
+	#nav-list {
 		list-style: none;
 		display: flex;
 		gap: 20px;
 	}
 
-	#top-list > li {
+	#nav-list > li {
 		display: inline;
 	}
 
-	#top-list-other {
+	#nav-list-other {
 		position: relative;
 	}
 
-	#top-list-other > ul {
+	#nav-list-other > ul {
 		position: absolute;
 		left: 0;
 		top: 150%;
@@ -158,20 +158,20 @@
 		transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
 	}
 
-	#top-list-other > ul > li {
+	#nav-list-other > ul > li {
 		white-space: nowrap;
 		line-height: 1.75em;
 		list-style-type: none;
 	}
 
-	#top-list-other:hover > ul {
+	#nav-list-other:hover > ul {
 		opacity: 1;
 		visibility: visible;
 		transform: translateY(0);
 	}
 
 
-	#top-logo > img {
+	#nav-logo > img {
 		width: 2em;
 		height: 2em;
 	}
@@ -228,29 +228,29 @@
 		display: none;
 	}
 
-	#top-info {
+	#nav-info {
 		color: #2b2b3b;
 		font-size: 1.5em;
 		min-width: 10em;
 		text-align: center;
 	}
 
-	#top-list {
+	#nav-list {
 		list-style: none;
 		display: flex;
 		gap: 20px;
 	}
 
-	#top-list > li {
+	#nav-list > li {
 		display: inline;
 		text-align: center;
 	}
 
-	#top-list-other {
+	#nav-list-other {
 		position: relative;
 	}
 
-	#top-list-other > ul {
+	#nav-list-other > ul {
 		position: absolute;
 		left: 0;
 		top: 150%;
@@ -262,20 +262,20 @@
 		transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
 	}
 
-	#top-list-other > ul > li {
+	#nav-list-other > ul > li {
 		white-space: nowrap;
 		line-height: 1.75em;
 		list-style-type: none;
 	}
 
-	#top-list-other:hover > ul {
+	#nav-list-other:hover > ul {
 		opacity: 1;
 		visibility: visible;
 		transform: translateY(0);
 	}
 
 
-	#top-logo > img {
+	#nav-logo > img {
 		width: 2em;
 		height: 2em;
 	}

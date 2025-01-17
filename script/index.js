@@ -1,6 +1,6 @@
 // CSS Navbar 点击菜单
-document.getElementById("top-btn").addEventListener("click", function () {
-	const nav = document.getElementById("top");
+document.getElementById("nav-btn").addEventListener("click", function () {
+	const nav = document.getElementById("nav");
 	if (nav.classList.contains("open")) {
 		nav.classList.remove("open");
 	} else {
@@ -40,5 +40,4 @@ for (const originalDiv of pubDivs) {
 		.replace(/<b><a style="color:orangered" href="(.*?)">(.*?)<\/a><\/b>/g, '<b><a class="r" href="$1">$2</a></b>');
 
 	originalDiv.parentNode.replaceChild(newDiv, originalDiv);
-	console.log(newDiv)
 }
