@@ -20,15 +20,24 @@
 
 	/* Aside */
 	#aside {
+		display: inline-block;
+		margin-top: 1em;
 		min-height: 8em;
-		font-size: 0.6em;
+		width: 50vw;
 	}
 
 	#aside > img {
 		width: 20vw;
 		max-width: 6em;
+		margin-left: 15vw;
+		float: left;
+	}
+
+	#aside > p {
+		font-size: 0.3em;
 		margin-left: 5vw;
 		float: left;
+		text-align: left;
 	}
 
 	/* Main */
@@ -122,6 +131,7 @@
 		margin-left: 2.5em;
 		margin-right: 2.5em;
 		margin-top: 20px;
+		padding-bottom: 1em;
 	}
 
 	/* Main */
@@ -345,4 +355,24 @@ body {
 
 #backTop:hover {
 	background-color: #aaaaaa80;
+}
+
+#toast {
+	width: 4.5em;
+	height: 2em;
+	position: fixed;
+	top: 20vh;
+	left: 50vw;
+	text-align: center;
+	line-height: 2em;
+	border-radius: 0.5em;
+	box-shadow: 0 0 4px #000000a0;
+	background-color: #aaaaaaf0;
+	color: #2b2b3b;
+	transition: opacity 0.3s ease;
+	opacity: 0;
+}
+
+#toast.show {
+	opacity: 1;
 }

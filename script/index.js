@@ -10,6 +10,24 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	window.addEventListener("resize", updateHeaderMargin);
 });
 
+// Address 点击复制
+document.getElementById("clickToCopy").addEventListener("click", function () {
+	const textToCopy = "Office 206, Building B3, Fenghuangshan Road 66, Yuelu District, Changsha 410012, Hunan, China.";
+
+	navigator.clipboard.writeText(textToCopy).then(function () {
+		console.log("Copy done！");
+
+		const toast = document.getElementById("toast");
+		toast.classList.add("show");
+
+		setTimeout(function () {
+			toast.classList.remove("show");
+		}, 500);
+	}).catch(function (err) {
+		console.error("Error, can't copy it. ", err);
+	});
+});
+
 // Publications 部分格式化
 const pubDivs = document.getElementsByClassName("dash");
 for (const originalDiv of pubDivs) {
@@ -32,10 +50,10 @@ const headerHeight = document.querySelector("header").offsetHeight;
 const scrollTopThreshold = 0.85 * (publicationsTop + headerHeight);
 window.onscroll = function () {
 	if (document.documentElement.scrollTop > scrollTopThreshold) {
-        backTopBtn.style.display = "block";
-    } else {
-        backTopBtn.style.display = "none";
-    }
+		backTopBtn.style.display = "block";
+	} else {
+		backTopBtn.style.display = "none";
+	}
 }
 
 backTopBtn.addEventListener("click", function () {
