@@ -329,3 +329,20 @@ body {
 	color: #0088ff;
 	text-decoration: underline;
 }
+
+#backTop {
+	width: 2.5em;
+	height: 2.5em;
+	position: fixed;
+	bottom: 5vw;
+	right: 5vw;
+	text-align: center;
+	line-height: 1.25em;
+	border-radius: 0.5em;
+	box-shadow: 0 0 4px #000000a0;
+	display: none;
+}
+
+#backTop:hover {
+	background-color: #aaaaaa80;
+}

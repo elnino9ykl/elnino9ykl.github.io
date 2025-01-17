@@ -11,7 +11,7 @@ document.getElementById("nav-btn").addEventListener("click", function () {
 // CSS Navbar 点击按钮
 document.querySelectorAll(".hover-line").forEach(element => {
 	element.addEventListener("click", function (event) {
-		document.getElementById("top").classList.remove("open");
+		document.getElementById("nav").classList.remove("open");
 	})
 });
 
@@ -41,3 +41,20 @@ for (const originalDiv of pubDivs) {
 
 	originalDiv.parentNode.replaceChild(newDiv, originalDiv);
 }
+
+// backTop 回到导航按钮
+const backTopBtn = document.getElementById("backTop");
+const publicationsTop = document.getElementById("publications").offsetTop;
+const headerHeight = document.querySelector("header").offsetHeight;
+const scrollTopThreshold = 0.85 * (publicationsTop + headerHeight);
+window.onscroll = function () {
+	if (document.documentElement.scrollTop > scrollTopThreshold) {
+        backTopBtn.style.display = "block";
+    } else {
+        backTopBtn.style.display = "none";
+    }
+}
+
+backTopBtn.addEventListener("click", function () {
+	document.documentElement.scrollTop = publicationsTop - headerHeight;
+});
