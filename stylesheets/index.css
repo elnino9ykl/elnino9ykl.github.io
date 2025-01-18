@@ -327,6 +327,20 @@ body {
 	text-decoration: underline;
 }
 
+a.pub-fold, a.pub-fold:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+a.pub-fold:hover {
+	color: #0088ff;
+	text-decoration: #0088ff 1px underline;
+}
+
+.dashset {
+	display: block;
+}
+
 .dash > p > span {
 	color: #2222ff;
 }

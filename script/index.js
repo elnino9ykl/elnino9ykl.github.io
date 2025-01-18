@@ -43,6 +43,26 @@ for (const originalDiv of pubDivs) {
 	originalDiv.parentNode.replaceChild(newDiv, originalDiv);
 }
 
+// Publications 部分折叠
+const pubIndexs = document.getElementsByClassName("pub-fold");
+const maxYear = pubIndexs[1].innerHTML;
+for (const pubIndex of pubIndexs) {
+	pubIndex.addEventListener("click", function () {
+		const index = pubIndex.innerHTML;
+		if (index === "Preprints") {
+			const display = document.getElementsByClassName("dashset")[0].style.display;
+			document.getElementsByClassName("dashset")[0].style.display = (display === "none" ? "block" : "none");
+		} else {
+			const dashsetIndex = +maxYear - +pubIndex.innerHTML + 1;
+			const display = document.getElementsByClassName("dashset")[dashsetIndex].style.display;
+			document.getElementsByClassName("dashset")[dashsetIndex].style.display = (display === "none" ? "block" : "none");
+		}
+
+		pubIndex.title = (pubIndex.title === "折叠" ? "展开" : "折叠");
+	});
+}
+
+
 // backTop 回到导航按钮
 const backTopBtn = document.getElementById("backTop");
 const publicationsTop = document.getElementById("publications").offsetTop;
