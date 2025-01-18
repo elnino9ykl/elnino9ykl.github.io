@@ -44,31 +44,22 @@ for (const originalDiv of pubDivs) {
 }
 
 // Publications 部分折叠
-const pubIndexs = document.getElementsByClassName("pub-fold");
-const maxYear = pubIndexs[1].innerHTML;
-for (const pubIndex of pubIndexs) {
-	pubIndex.addEventListener("click", function () {
-		const index = pubIndex.innerHTML;
-		if (index === "Preprints") {
-			const display = document.getElementsByClassName("dashset")[0].style.display;
-			document.getElementsByClassName("dashset")[0].style.display = (display === "none" ? "block" : "none");
-		} else {
-			const dashsetIndex = +maxYear - +pubIndex.innerHTML + 1;
-			const display = document.getElementsByClassName("dashset")[dashsetIndex].style.display;
-			document.getElementsByClassName("dashset")[dashsetIndex].style.display = (display === "none" ? "block" : "none");
-		}
-
-		pubIndex.title = (pubIndex.title === "折叠" ? "展开" : "折叠");
+const pubFolds = document.getElementsByClassName("pub-fold");
+for (const index in pubFolds) {
+	pubFolds[+index].addEventListener("click", function () {
+		const display = document.getElementsByClassName("dashset")[+index].style.display;
+		document.getElementsByClassName("dashset")[+index].style.display = (display === "none" ? "block" : "none");
+		pubFolds[+index].innerHTML = (pubFolds[+index].innerHTML === "折叠" ? "展开" : "折叠");
 	});
 }
 
 // Publications 计数
+const dashsets = document.getElementsByClassName("dashset");
+const pubCounts = document.getElementsByClassName("pub-count");
 document.addEventListener("DOMContentLoaded", function () {
-	const pubConuts = document.getElementsByClassName("pub-count");
-	const dashsets = document.getElementsByClassName("dashset");
-
-	for (const index in pubConuts) {
-		pubConuts[+index].innerHTML = "共" + dashsets[+index].children.length + "篇";
+	for (const index in pubCounts) {
+		console.log(index);
+		pubCounts[+index].innerHTML = "共" + dashsets[+index].children.length + "篇";
 	}
 });
 
