@@ -10,8 +10,8 @@
 	}
 
 	#aside {
-		width: 90vw;
-		text-align: center;
+		width: 30vw;
+		margin-top: 1em;
 	}
 
 	#main {
@@ -19,25 +19,26 @@
 	}
 
 	/* Aside */
-	#aside {
-		display: inline-block;
-		margin-top: 1em;
-		min-height: 8em;
-		width: 50vw;
-	}
-
 	#aside > img {
 		width: 20vw;
-		max-width: 6em;
-		margin-left: 15vw;
+		padding-left: 5vw;
+		padding-right: 5vw;
+		padding-bottom: 1em;
 		float: left;
 	}
 
 	#aside > p {
-		font-size: 0.3em;
-		margin-left: 5vw;
+		font-size: 0.85em;
+		line-height: 1em;
+		height: 0.85em;
+		padding-bottom: 0.5em;
+		width: 30vw;
 		float: left;
-		text-align: left;
+
+	}
+
+	#aside > p > #address {
+		display: none;
 	}
 
 	/* Main */
