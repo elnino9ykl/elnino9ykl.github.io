@@ -1,5 +1,5 @@
 // CSS 其他尺寸动态适配
-document.addEventListener("DOMContentLoaded", function (event) {
+document.addEventListener("DOMContentLoaded", function () {
 	function updateHeaderMargin() {
 		const headerHeight = document.querySelector("header").offsetHeight;
 		const rootElement = document.documentElement;
@@ -61,6 +61,16 @@ for (const pubIndex of pubIndexs) {
 		pubIndex.title = (pubIndex.title === "折叠" ? "展开" : "折叠");
 	});
 }
+
+// Publications 计数
+document.addEventListener("DOMContentLoaded", function () {
+	const pubConuts = document.getElementsByClassName("pub-count");
+	const dashsets = document.getElementsByClassName("dashset");
+
+	for (const index in pubConuts) {
+		pubConuts[+index].innerHTML = "共" + dashsets[+index].children.length + "篇";
+	}
+});
 
 
 // backTop 回到导航按钮
