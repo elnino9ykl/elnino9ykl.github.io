@@ -54,15 +54,21 @@ for (const index in pubFolds) {
 }
 
 // Publications 计数
-const dashsets = document.getElementsByClassName("dashset");
-const pubCounts = document.getElementsByClassName("pub-count");
-document.addEventListener("DOMContentLoaded", function () {
-	for (const index in pubCounts) {
-		console.log(index);
-		pubCounts[+index].innerHTML = "共" + dashsets[+index].children.length + "篇";
-	}
-});
+// const dashsets = document.getElementsByClassName("dashset");
+// const pubCounts = document.getElementsByClassName("pub-count");
+// document.addEventListener("DOMContentLoaded", function () {
+// 	function pubCounter() {
+// 		console.log("p");
+// 		for (const index in pubCounts) {
+// 			console.log(index);
+// 			pubCounts[+index].innerHTML = "共" + dashsets[+index].children.length + "篇";
+// 		}
+// 	}
+//
+// 	pubCounter();
+// });
 
+// 此功能废
 
 // backTop 回到导航按钮
 const backTopBtn = document.getElementById("backTop");
