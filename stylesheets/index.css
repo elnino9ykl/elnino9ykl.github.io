@@ -23,22 +23,27 @@
 		width: 20vw;
 		padding-left: 5vw;
 		padding-right: 5vw;
-		padding-bottom: 1em;
+		padding-bottom: 0.5em;
 		float: left;
 	}
 
 	#aside > p {
-		font-size: 0.85em;
-		line-height: 1em;
-		height: 0.85em;
-		padding-bottom: 0.5em;
-		width: 30vw;
+		font-size: 3vw;
+		line-height: 3vw;
+		height: 3vw;
+		overflow-wrap: anywhere;
+		width: 25vw;
+		padding-left: 2.5vw;
+		padding-right: 2.5vw;
 		float: left;
-
 	}
 
 	#aside > p > #address {
 		display: none;
+	}
+
+	#aside-email {
+		padding-bottom: 1em;
 	}
 
 	/* Main */
