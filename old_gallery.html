@@ -413,6 +413,21 @@
         </div>  
             
     </div>
+<script>
+	let result = [];
+	const main = document.getElementById("content");
+	console.log(main.childElementCount);
+	for (const div of main.children) {
+		const imgS = div.getElementsByTagName("td")[0].innerHTML;
+		const imgSrc = imgS.match(/"(.*?)"/sg)[0];
+		const description = div.getElementsByTagName("td")[1].innerHTML;
+		const arr = [imgSrc, description];
+		// console.log(arr);
+		result.push(arr);
+	}
+
+	console.log(result);
+</script>
 </body>
 </html>
 
