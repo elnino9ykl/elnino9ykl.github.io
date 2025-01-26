@@ -1,0 +1,35 @@
+#container {
+	width: 90vw;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	margin-top: calc(var(--header-height) + 1em);
+}
+
+#title {
+	width: 90vw;
+	text-align: center;
+	font-size: 2em;
+	line-height: 3vw;
+}
+
+#title > img {
+	height: 3vw;
+	vertical-align: -0.5vw;
+}
+
+#picture {
+	width: 60vw;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	margin-top: 2em;
+}
+
+#picture > img {
+	width: 100%;
+}
+
+
+/* 通用 */
+:root {
+	--header-height: 75px;
+}
