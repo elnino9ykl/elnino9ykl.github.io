@@ -1,35 +1,139 @@
-#container {
-	width: 90vw;
-	padding-left: 5vw;
-	padding-right: 5vw;
-	margin-top: calc(var(--header-height) + 1em);
+/* 适配手机 */
+@media only screen and (max-width: 768px) {
+	#container {
+		width: 96vw;
+		margin-left: calc(2vw - 8px);
+		margin-right: calc(2vw - 8px);
+		margin-top: var(--header-height);
+	}
+
+	#title {
+		width: 90vw;
+		text-align: center;
+		font-size: 4vw;
+	}
+
+	#title > img {
+		height: 8vw;
+		vertical-align: -2.5vw;
+	}
+
+	#picture {
+		width: 60vw;
+		margin-left: 15vw;
+		margin-right: 15vw;
+		margin-top: 2em;
+	}
+
+	#picture > img {
+		width: 100%;
+	}
+
+	ul {
+		list-style-type: square;
+		padding-left: 1em;
+	}
 }
 
-#title {
-	width: 90vw;
-	text-align: center;
-	font-size: 2em;
-	line-height: 3vw;
+/* 适配电脑 */
+@media only screen and (min-width: 1025px) {
+	#container {
+		width: 90vw;
+		padding-left: 5vw;
+		padding-right: 5vw;
+		margin-top: calc(var(--header-height) + 1em);
+	}
+
+	#title {
+		width: 90vw;
+		text-align: center;
+		font-size: 2em;
+		line-height: 3vw;
+	}
+
+	#title > img {
+		height: 3vw;
+		vertical-align: -0.5vw;
+	}
+
+	#picture {
+		width: 60vw;
+		margin-left: 15vw;
+		margin-right: 15vw;
+		margin-top: 2em;
+	}
+
+	#picture > img {
+		width: 100%;
+	}
 }
 
-#title > img {
-	height: 3vw;
-	vertical-align: -0.5vw;
-}
+/* 适配其他设备 */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	#container {
+		width: 90vw;
+		padding-left: 5vw;
+		padding-right: 5vw;
+		margin-top: calc(var(--header-height) + 3em);
+	}
 
-#picture {
-	width: 60vw;
-	margin-left: 15vw;
-	margin-right: 15vw;
-	margin-top: 2em;
-}
+	#title {
+		width: 90vw;
+		text-align: center;
+		font-size: 2em;
+		line-height: 3vw;
+	}
 
-#picture > img {
-	width: 100%;
-}
+	#title > img {
+		height: 3vw;
+		vertical-align: -0.5vw;
+	}
 
+	#picture {
+		width: 60vw;
+		margin-left: 15vw;
+		margin-right: 15vw;
+		margin-top: 2em;
+	}
+
+	#picture > img {
+		width: 100%;
+	}
+}
 
 /* 通用 */
 :root {
 	--header-height: 75px;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+li {
+	overflow-wrap: anywhere;
+}
+
+li > a, li > a:visited {
+	color: #0088ff;
+}
+
+#phd {
+	list-style: disc;
+}
+
+#master {
+	list-style: circle;
+}
+
+#External {
+	list-style: disc;
+}
+
+#Fphd {
+	list-style: circle;
+}
+
+#Fmaster {
+	list-style: disc;
 }
