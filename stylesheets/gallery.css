@@ -1,9 +1,13 @@
 /* 适配手机 */
 @media only screen and (max-width: 768px) {
 	#container {
-		width: 100vw;
-		margin-top: calc(var(--header-height) - 2em);
 		column-count: 3;
+		margin-top: 40px;
+		width: 96vw;
+		margin-left: calc(2vw - 8px);
+		margin-right: calc(2vw - 8px);
+		padding-top: 0.5em;
+		overflow-x: hidden;
 	}
 
 	.dash {
@@ -13,7 +17,7 @@
 	}
 
 	.dash-display {
-		width: 32vw;
+		width: 30vw;
 		position: relative;
 		display: inline-block;
 	}
@@ -24,12 +28,11 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		width: 32vw;
+		width: 30vw;
 		margin-top: 1em;
 		background: rgba(0, 0, 0, 0.7);
 		color: white;
 		display: flex;
-		justify-content: center;
 		align-items: center;
 		opacity: 0;
 		transition: opacity 0.3s ease;
@@ -37,19 +40,21 @@
 	}
 
 	.dash-description > span {
-		width: 80%;
+		width: 26vw;
+		margin-left: 2vw;
+		margin-right: 2vw;
 		font-size: 3vw;
 		text-align: center;
 	}
 
-	.dash:hover > .dash-description {
+	.dash.show > .dash-description {
 		transition: opacity 0.5s ease;
 		visibility: visible;
 		opacity: 1;
 	}
 
 	.dash-display > img {
-		width: 100%;
+		width: 30vw;
 	}
 
 	.date {

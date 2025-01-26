@@ -10,3 +10,14 @@ document.addEventListener("DOMContentLoaded", function () {
 	window.addEventListener("resize", updateHeaderMargin);
 });
 
+// 手机模式点击显示
+const dashset = document.getElementsByClassName("dash");
+for (const dash of dashset) {
+	dash.addEventListener("click", function () {
+		if (dash.classList.contains("show")) {
+			dash.classList.remove("show");
+		} else {
+			dash.classList.add("show");
+		}
+	});
+}
