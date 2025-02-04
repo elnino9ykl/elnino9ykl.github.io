@@ -20,6 +20,7 @@
 
 	#picture {
 		width: 60vw;
+		height: 45vw;
 		margin-left: 15vw;
 		margin-right: 15vw;
 		margin-top: 2em;
@@ -58,6 +59,7 @@
 
 	#picture {
 		width: 60vw;
+		height: 45vw;
 		margin-left: 15vw;
 		margin-right: 15vw;
 		margin-top: 2em;
@@ -91,6 +93,7 @@
 
 	#picture {
 		width: 60vw;
+		height: 45vw;
 		margin-left: 15vw;
 		margin-right: 15vw;
 		margin-top: 2em;
@@ -108,6 +111,21 @@
 
 body {
 	overflow-x: hidden;
+}
+
+#picture {
+	overflow: hidden;
+	position: relative;
+}
+
+#picture > .pic {
+	position: absolute;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+
+#picture > .pic.active {
+	opacity: 1;
 }
 
 li {
