@@ -42,6 +42,23 @@
 		display: none;
 	}
 
+	#aside > #visitor {
+		margin-top: 1em;
+		width: 100%;
+		float: left;
+		text-align: center;
+	}
+
+	#aside > #visitor > a > img {
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#aside > #visitor > a {
+		font-size: 3vw;
+	}
+
 	#aside-email {
 		padding-bottom: 1em;
 	}
@@ -242,6 +259,11 @@
 
 	#aside > p > #address {
 		display: none;
+	}
+
+	#aside > #visitor {
+		width: 100%;
+		float: left;
 	}
 
 	/* Main */
