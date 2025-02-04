@@ -72,7 +72,7 @@
 		display: none;
 	}
 
-	#nav-logo > img {
+	#nav-logo > a > img {
 		width: 2em;
 		height: 2em;
 	}
@@ -171,7 +171,7 @@
 	}
 
 
-	#nav-logo > img {
+	#nav-logo > a > img {
 		width: 2em;
 		height: 2em;
 	}
@@ -275,9 +275,9 @@
 	}
 
 
-	#nav-logo > img {
-		width: 2em;
-		height: 2em;
+	#nav-logo > a > img {
+		width: 1.5em;
+		height: 1.5em;
 	}
 
 	/* Underline Animation*/
