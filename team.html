@@ -1,294 +1,431 @@
-﻿
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <style>
-        #content {
-            background-color: mintcream;
-            width: 95%;
-        }
-
-        a:hover {
-            background-color:azure;
-        }
-
-        a:visited{
-            background-color:azure;
-        }
-        button {
-            color:black;
-            background-color:transparent;
-            border:none;
-            font-family:'Candara', 'Microsoft YaHei', sans-serif;
-            font-size:16px;
-            font-weight:normal;
-        }
-        button:hover {
-            background-color: azure;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="stylesheets/team.css"/>
+	<link rel="stylesheet" href="stylesheets/navbar.css"/>
+	<title>Kailun Yang 杨恺伦 | Team 课题组团队</title>
 </head>
+<body>
+<header id="nav">
+	<div id="nav-info">Kailun Yang 杨恺伦</div>
+	<span id="nav-btn">导航</span>
+	<ul id="nav-list">
+		<li><a href="index.html" class="hover-line">首页 (Index)</a></li>
+		<li><a href="gallery.html" class="hover-line">课题组风采 (Gallery)</a></li>
+		<li><a href="team.html" class="hover-line">课题组团队 (Team)</a></li>
+		<li><a href="index.html#publications" class="hover-line">Publications</a></li>
+		<li id="nav-list-other"><a href="#" class="hover-line">其他外链 (Link)</a>
+			<ul>
+				<li><a href="https://scholar.google.com/citations?user=pKFqWhgAAAAJ&hl=en&oi=ao" class="hover-line">Google
+					Scholar</a></li>
+				<li><a href="https://www.researchgate.net/profile/Kailun_Yang2" class="hover-line">Research Gate</a>
+				</li>
+				<li><a href="https://dblp.org/pid/190/9526.html" class="hover-line">DBLP</a></li>
+			</ul>
+		</li>
+	</ul>
+	<ul id="nav-logo">
+		<a href="https://robotics.hnu.edu.cn/info/1071/2119.htm">
+			<img src="img/hnu.png" alt="HNU"/>
+		</a>
+		<a href="https://github.com/elnino9ykl">
+			<img src="img/github.png" alt="Github"/>
+		</a>
+		<a href="https://scholar.google.com/citations?user=pKFqWhgAAAAJ&hl=en&oi=ao">
+			<img src="img/google-scholar.png" alt="Google Scholar"/>
+		</a>
+	</ul>
+</header>
+
+<div id="container">
+	<div id="title">
+		<img src="./img/logo.png" alt="">
+		Computer Vision for Panoramic Understanding Lab (cv:pu)
+	</div>
+
+	<div id="picture">
+		<img class="pic active" src="./img/labmates_1.jpg" alt="">
+		<img class="pic" src="./img/labmates_2.jpg" alt="">
+	</div>
+
+	<div id="roster">
+		<h3>PhD Students</h3>
+
+		<ul id="phd">
+			<li>
+				<a href="https://github.com/Bryant-Teng">Fei Teng</a>, PhD student at HNU (Topic: Panoramic
+				Understanding).
+			</li>
+
+			<li>
+				<a href="https://github.com/xifen523">Kai Luo</a>, PhD student at HNU (Topic: Scene Understanding).
+			</li>
+
+			<li>
+				<a href="javascript:void(0)">Mengfei Duan</a>, PhD student at HNU (Topic: Out-of-Distribution
+				Understanding), Co-advising with <a href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong
+				Li</a>.
+			</li>
+
+			<li>
+				<a href="javascript:void(0)">Wanjun Jia</a>, PhD student at HNU (Topic: Affordance Understanding),
+				Co-advising with <a href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a>.
+			</li>
+
+			<li>
+				<a href="https://github.com/lynn-yu">Siyu Li</a>, PhD student at HNU (Topic: BEV Scene Understanding),
+				Co-advising with <a href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a>.
+			</li>
+
+			<li>
+				<a href="https://github.com/yihong-97/">Yihong Cao</a>, PhD student at HNU (Topic: Unsupervised Domain
+				Adaptation), Co-advising with <a href="http://robotics.hnu.edu.cn/info/1071/1538.htm">Prof. Hui
+				Zhang</a> and <a href="http://robotics.hnu.edu.cn/info/1071/1157.htm">Prof. Yaonan Wang</a>.
+			</li>
+
+			<li>
+				<a href="javascript:void(0)">Jiacheng Lin</a>, PhD student at HNU (Topic: Referring and Interactive
+				Scene Understanding), Co-advising with <a href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof.
+				Zhiyong Li</a>.
+			</li>
+
+			<li>
+				<a href="https://github.com/JinghangLi">Jinghang Li</a>, PhD student at HNU (Topic: Event-based Vision),
+				Co-advising with <a href="https://sites.google.com/view/zhouyi-joey/home">Prof. Yi Zhou</a>.
+			</li>
+
+			<li>
+				<a href="javascript:void(0)">Lingzhao Kong</a>, PhD student at HNU (Topic: Collaborative Perception),
+				Co-advising with <a href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a>.
+			</li>
+
+			<li>
+				<a href="https://github.com/yangfan293/">Fan Yang</a>, PhD student at HNU (Topic: Affordance
+				Understanding), Co-advising with <a href="http://robotics.hnu.edu.cn/info/1071/1163.htm">Prof. Wenrui
+				Chen</a> and <a href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a>.
+			</li>
+
+			<li>
+				<a href="https://github.com/XuZhang1211">Xu Zhang</a>, PhD student at HNU (Topic: Cross-Modal Learning
+				for Scene Understanding), Co-advising with <a href="http://csee.hnu.edu.cn/people/yuanjin">Prof. Jin
+				Yuan</a> and <a href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a>.
+			</li>
 
-<body style="background-color:azure" ;>
+			<li>
+				<a href="javascript:void(0)">Qirui Qin</a>, PhD student at HNU (Topic: Scene Understanding).
+			</li>
 
-    <div id="content">
-        <p><b style="font-size:250%;">Computer Vision for Panoramic Understanding Lab (cv:pu)</b></p>
+			<li>
+				<a href="javascript:void(0)">Guoqiang Zhao</a>, PhD student at HNU (Topic: Open-Vocabulary
+				Understanding).
+			</li>
 
-        <div>
-            <table cellpadding="8">
-                <tr>
-                    <td class="table_image_spec" align="center"><img src="./img/logo.png" width="250"></td>
-                </tr>
-                <tr>
-                    <td class="table_image_spec" align="center"><img src="./img/labmates_1.jpg" width="1500"></td>
-                </tr>
-                <tr>
-                    <td class="table_image_spec" align="center"><img src="./img/labmates_2.jpg" width="1500"></td>
-                </tr>
-            </table>
-        </div>
+			<li>
+				<a href="javascript:void(0)">Fang Long</a>, PhD student at HNU (Topic: Image Generation and
+				Restoration), Co-advising with <a href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong
+				Li</a>.
+			</li>
+		</ul>
 
-        <p><b style="font-size:120%;">PhD Students</b></p>
+		<h3>Master Students</h3>
 
-        <ul>
-            <li><a style="color:MidnightBlue" href="https://github.com/Bryant-Teng">Fei Teng</a>, PhD student at HNU (Topic: Panoramic Understanding).</li>
+		<ul id="master">
+			<li><a href="javascript:void(0)">Yizhou Huang</a>, Master student at HNU (Topic: Affordance Understanding),
+				Co-advising with <a href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a>.
+			</li>
 
-            <li><a style="color:MidnightBlue" href="https://github.com/xifen523">Kai Luo</a>, PhD student at HNU (Topic: Scene Understanding).</li>
+			<li><a href="javascript:void(0)">Jiawei Liu</a>, Master student at HNU (Topic: Light-Field Scene
+				Understanding), Co-advising with <a href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong
+					Li</a>.
+			</li>
 
-            <li><a style="color:MidnightBlue">Mengfei Duan</a>, PhD student at HNU (Topic: Out-of-Distribution Understanding), 
-            Co-advising with <a style="color:MidnightBlue" href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a>.</li>
-    
-            <li><a style="color:MidnightBlue">Wanjun Jia</a>, PhD student at HNU (Topic: Affordance Understanding), 
-            Co-advising with <a style="color:MidnightBlue" href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a>.</li>
+			<li><a href="javascript:void(0)">Jiayi Zhao</a>, Master student at HNU (Topic: RGB-X Scene Understanding),
+				Co-advising with <a href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a>.
+			</li>
 
-            <li><a style="color:MidnightBlue" href="https://github.com/lynn-yu">Siyu Li</a>, PhD student at HNU (Topic: BEV Scene Understanding), 
-            Co-advising with <a style="color:MidnightBlue" href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a>.</li>
-                
-            <li><a style="color:MidnightBlue" href="https://github.com/yihong-97/">Yihong Cao</a>, PhD student at HNU (Topic: Unsupervised Domain Adaptation), 
-            Co-advising with <a style="color:MidnightBlue" href="http://robotics.hnu.edu.cn/info/1071/1538.htm">Prof. Hui Zhang</a> and <a style="color:MidnightBlue" href="http://robotics.hnu.edu.cn/info/1071/1157.htm">Prof. Yaonan Wang</a>.</li>
-                
-            <li><a style="color:MidnightBlue">Jiacheng Lin</a>, PhD student at HNU (Topic: Referring and Interactive Scene Understanding), 
-            Co-advising with <a style="color:MidnightBlue" href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a>.</li>
-                
-            <li><a style="color:MidnightBlue" href="https://github.com/JinghangLi">Jinghang Li</a>, PhD student at HNU (Topic: Event-based Vision), 
-            Co-advising with <a style="color:MidnightBlue" href="https://sites.google.com/view/zhouyi-joey/home">Prof. Yi Zhou</a>.</li>
-            
-            <li><a style="color:MidnightBlue">Lingzhao Kong</a>, PhD student at HNU (Topic: Collaborative Perception), 
-            Co-advising with <a style="color:MidnightBlue" href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a>.</li>
+			<li><a href="https://github.com/JiajunChern">Jiajun Chen</a>, Master student at HNU (Topic: Referring and
+				Interactive Scene Understanding), Co-advising with <a
+						href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a>.
+			</li>
 
-            <li><a style="color:MidnightBlue" href="https://github.com/yangfan293/">Fan Yang</a>, PhD student at HNU (Topic: Affordance Understanding), 
-            Co-advising with <a style="color:MidnightBlue" href="http://robotics.hnu.edu.cn/info/1071/1163.htm">Prof. Wenrui Chen</a> and <a style="color:MidnightBlue" href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a>.</li>
-            
-            <li><a style="color:MidnightBlue" href="https://github.com/XuZhang1211">Xu Zhang</a>, PhD student at HNU (Topic: Cross-Modal Learning for Scene Understanding), 
-            Co-advising with <a style="color:MidnightBlue" href="http://csee.hnu.edu.cn/people/yuanjin">Prof. Jin Yuan</a> and <a style="color:MidnightBlue" href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a>.</li>               
-        
-            <li><a style="color:MidnightBlue">Qirui Qin</a>, PhD student at HNU (Topic: Scene Understanding).</li>
+			<li><a href="https://github.com/Terminal-K/">Kang Zeng</a>, Master student at HNU (Topic: Moving Object
+				Segmentation), Co-advising with <a href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong
+					Li</a>.
+			</li>
 
-            <li><a style="color:MidnightBlue">Guoqiang Zhao</a>, PhD student at HNU (Topic: Open-Vocabulary Understanding).</li>
+			<li><a href="javascript:void(0)">Xinying Hong</a>, Master student at HNU (Topic: Vectorized HD Map
+				Construction), Co-advising with <a href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong
+					Li</a>.
+			</li>
 
-            <li><a style="color:MidnightBlue">Fang Long</a>, PhD student at HNU (Topic: Image Generation and Restoration), 
-            Co-advising with <a style="color:MidnightBlue" href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a>.</li>            
-        </ul>
+			<li><a href="javascript:void(0)">Yuheng Zhang</a>, Master student at HNU (Topic: Semantic Occupancy
+				Prediction).
+			</li>
 
-        <p><b style="font-size:120%;">Master Students</b></p>
+			<li><a href="javascript:void(0)">Chunting Wang</a>, Master student at HNU (Topic: Driving Topology
+				Reasoning).
+			</li>
 
-        <ul>
+			<li><a href="https://losehu.com/">Sheng Wu</a>, Master student at HNU (Topic: Panoramic Generation).</li>
 
-            <li><a style="color:MidnightBlue">Yizhou Huang</a>, Master student at HNU (Topic: Affordance Understanding),
-            Co-advising with <a style="color:MidnightBlue" href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a>.</li>
+			<li><a href="javascript:void(0)">Zhe Yang</a>, Master student at HNU (Topic: Panoramic Reconstruction).</li>
 
-            <li><a style="color:MidnightBlue">Jiawei Liu</a>, Master student at HNU (Topic: Light-Field Scene Understanding),
-            Co-advising with <a style="color:MidnightBlue" href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a>.</li>
-        
-            <li><a style="color:MidnightBlue">Jiayi Zhao</a>, Master student at HNU (Topic: RGB-X Scene Understanding),
-            Co-advising with <a style="color:MidnightBlue" href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a>.</li>
+			<li><a href="javascript:void(0)">Guoliang Zhu</a>, Master student at HNU (Topic: Affordance Understanding).
+			</li>
+
+			<li><a href="javascript:void(0)">Kaixin Lin</a>, Master student at HNU (Topic: Panoramic Reconstruction).
+			</li>
 
-            <li><a style="color:MidnightBlue" href="https://github.com/JiajunChern">Jiajun Chen</a>, Master student at HNU (Topic: Referring and Interactive Scene Understanding),
-            Co-advising with <a style="color:MidnightBlue" href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a>.</li>
-
-            <li><a style="color:MidnightBlue" href="https://github.com/Terminal-K/">Kang Zeng</a>, Master student at HNU (Topic: Moving Object Segmentation),
-            Co-advising with <a style="color:MidnightBlue" href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a>.</li>
-
-            <li><a style="color:MidnightBlue">Xinying Hong</a>, Master student at HNU (Topic: Vectorized HD Map Construction),
-            Co-advising with <a style="color:MidnightBlue" href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a>.</li>
-    
-            <li><a style="color:MidnightBlue">Yuheng Zhang</a>, Master student at HNU (Topic: Semantic Occupancy Prediction).</li>
-
-            <li><a style="color:MidnightBlue">Chunting Wang</a>, Master student at HNU (Topic: Driving Topology Reasoning).</li>
-
-            <li><a style="color:MidnightBlue" href="https://losehu.com/">Sheng Wu</a>, Master student at HNU (Topic: Panoramic Generation).</li>
-
-            <li><a style="color:MidnightBlue">Zhe Yang</a>, Master student at HNU (Topic: Panoramic Reconstruction).</li>
-
-            <li><a style="color:MidnightBlue">Guoliang Zhu</a>, Master student at HNU (Topic: Affordance Understanding).</li>
-
-            <li><a style="color:MidnightBlue">Kaixin Lin</a>, Master student at HNU (Topic: Panoramic Reconstruction).</li>
-
-            <li><a style="color:MidnightBlue">Wenxin Li</a>, Master student at HNU (Topic: Video Object Segmentation).</li>
-
-            <li><a style="color:MidnightBlue">Jiayi Le</a>, Master student at HNU (Topic: 6D Object Pose Estimation).
-            Co-advising with <a style="color:MidnightBlue" href="http://robotics.hnu.edu.cn/info/1071/1163.htm">Prof. Wenrui Chen</a>.</li>
-
-            <li><a style="color:MidnightBlue">Zhikun Zhou</a>, Master student at HNU (Topic: Panoramic Reconstruction).</li>
-
-            <li><a style="color:MidnightBlue">Pujun Guo</a>, Master student at HNU (Topic: Panoramic Generation).</li>
-
-            <li><a style="color:MidnightBlue">Yuhang Wang</a>, Master student at HNU (Topic: Semantic Occupancy Prediction).</li>
-
-            <li><a style="color:MidnightBlue">Di Kuang</a>, Master student at HNU (Topic: Scene Understanding).</li>
-
-            <li><a style="color:MidnightBlue">Xuehan Wang</a>, Master student at HNU (Topic: Scene Understanding).</li>
-
-            <li><a style="color:MidnightBlue" href="https://github.com/FaterYU">Yu Zheng</a>, Master student at HNU (Topic: Scene Understanding).</li>
-
-            <li><a style="color:MidnightBlue">Weixing Feng</a>, Master student at HNU (Topic: Scene Understanding).</li>            
-
-            <li><a style="color:MidnightBlue">Meilin Chen</a>, Master student at HNU (Topic: Scene Understanding).</li>
-
-            <li><a style="color:MidnightBlue">Yi Xie</a>, Master student at HNU (Topic: Scene Understanding).</li>
-        </ul>
-
-        <p><b style="font-size:120%;">External Students</b></p>
-        <ul>                         
-            <li><a style="color:MidnightBlue" href="https://github.com/MasterHow/">Hao Shi</a>, PhD student at ZJU (Topic: Temporal Scene Understanding),
-            Co-advising with <a style="color:MidnightBlue" href="http://wangkaiwei.org/indexeg.html">Prof. Kaiwei Wang</a>.</li>
-
-            <li><a style="color:MidnightBlue">Xiaoting Yin</a>, PhD student at ZJU (Topic: Event-based Vision),
-            Co-advising with <a style="color:MidnightBlue" href="http://wangkaiwei.org/indexeg.html">Prof. Kaiwei Wang</a>.</li>
-    
-            <li><a style="color:MidnightBlue" href="https://github.com/zju-jiangqi">Qi Jiang</a>, PhD student at ZJU (Topic: Computational Imaging Solution to Minimalist Panoramic Optical System and Related Applications), 
-            Co-advising with <a style="color:MidnightBlue" href="http://wangkaiwei.org/indexeg.html">Prof. Kaiwei Wang</a>.</li>
-                                
-            <li><a style="color:MidnightBlue" href="https://github.com/flysoaryun/">Ze Wang</a>, PhD student at ZJU (Topic: Visual Odometry and SLAM), 
-            Co-advising with <a style="color:MidnightBlue" href="http://wangkaiwei.org/indexeg.html">Prof. Kaiwei Wang</a> and <a style="color:MidnightBlue" href="http://zju-fast.com/fei-gao/">Prof. Fei Gao</a>.</li>
-            
-            <li><a style="color:MidnightBlue" href="https://github.com/BambValley">Yufan Zhang</a>, PhD student at ZJU (Topic: Visual Odometry and SLAM), 
-            Co-advising with <a style="color:MidnightBlue" href="http://wangkaiwei.org/indexeg.html">Prof. Kaiwei Wang</a>.</li>
-
-            <li><a style="color:MidnightBlue" href="https://github.com/RuipingL/">Ruiping Liu</a>, PhD student at KIT (Topic: Seamless Efficiency for Visual Perception in Assistive Systems), 
-            Co-advising with <a style="color:MidnightBlue" href="https://cvhci.anthropomatik.kit.edu/~stiefel">Prof. Rainer Stiefelhagen</a> and <a style="color:MidnightBlue" href="https://jamycheung.github.io/">Dr. Jiaming Zhang</a>.</li>
-
-            <li><a style="color:MidnightBlue" href="https://junweizheng93.github.io/">Junwei Zheng</a>, PhD Student at KIT (Topic: Vision-Language Navigation for Mobility Assistance), 
-            Co-advising with <a style="color:MidnightBlue" href="https://cvhci.anthropomatik.kit.edu/~stiefel">Prof. Rainer Stiefelhagen</a> and <a style="color:MidnightBlue" href="https://hci.anthropomatik.kit.edu/21_59.php">Prof. Kathrin Gerling</a>.</li>
-
-            <li><a style="color:MidnightBlue" href="https://github.com/ZhonghuaYi">Zhonghua Yi</a>, PhD student at ZJU (Topic: Dense Correspondence Estimation), 
-            Co-advising with <a style="color:MidnightBlue" href="http://wangkaiwei.org/indexeg.html">Prof. Kaiwei Wang</a>.</li>
-
-            <li><a style="color:MidnightBlue" href="https://jasonfu1998.github.io/">Jia Fu</a>, PhD student at KTH (Topic: Robust Deep Learning for Action Recognition).</li>
-
-            <li><a style="color:MidnightBlue" href="https://github.com/Kratos-Wen">Di Wen</a>, PhD student at KIT (Topic: Human-Object Interaction Detection),
-            Co-advising with <a style="color:MidnightBlue" href="https://cvhci.anthropomatik.kit.edu/~stiefel">Prof. Rainer Stiefelhagen</a> and <a style="color:MidnightBlue" href="https://cvhci.anthropomatik.kit.edu/people_2123.php">Dr. Kunyu Peng</a>.</li>
-                
-            <li><a style="color:MidnightBlue">Shaohua Gao</a>, PhD student at ZJU (Topic: Panoramic Imaging), 
-            Co-advising with <a style="color:MidnightBlue" href="http://wangkaiwei.org/indexeg.html">Prof. Kaiwei Wang</a> and <a style="color:MidnightBlue" href="https://person.zju.edu.cn/en/baijian">Prof. Jian Bai</a>.</li>
-    
-            <li><a style="color:MidnightBlue" href="https://github.com/wumengshenyou/">Yao Gao</a>, PhD student at ZJU (Topic: End-to-End Computational Imaging), 
-            Co-advising with <a style="color:MidnightBlue" href="http://wangkaiwei.org/indexeg.html">Prof. Kaiwei Wang</a>.</li>
-
-            <li><a style="color:MidnightBlue" href="https://github.com/XiaolongQian/DCDI">Xiaolong Qian</a>, PhD student at ZJU (Topic: Computational Aberration Correction), 
-            Co-advising with <a style="color:MidnightBlue" href="http://wangkaiwei.org/indexeg.html">Prof. Kaiwei Wang</a>.</li>
-        </ul>
-
-        <p><b style="font-size:120%;">Former PhD Students</b></p>
-        <ul>
-
-            <li><a style="color:MidnightBlue" href="https://jamycheung.github.io/">Jiaming Zhang</a>, PhD student at KIT (Topic: <a href="https://publikationen.bibliothek.kit.edu/1000164651">Scene Understanding for Intelligent Transportation and Mobility Assistance Systems</a>), 
-            Co-advised with <a style="color:MidnightBlue" href="https://cvhci.anthropomatik.kit.edu/~stiefel">Prof. Rainer Stiefelhagen</a> and <a style="color:MidnightBlue" href="https://www.robots.ox.ac.uk/~phst/">Prof. Philip Torr.</a></li>
-            Now postdoctoral researcher at KIT.
-
-            <li><a style="color:MidnightBlue" href="https://cvhci.anthropomatik.kit.edu/people_2123.php">Kunyu Peng</a>, PhD student at KIT (Topic: Towards Generalizable Deep Learning Based Human Action Recognition), 
-            Co-advising with <a style="color:MidnightBlue" href="https://cvhci.anthropomatik.kit.edu/~stiefel">Prof. Rainer Stiefelhagen</a> and <a style="color:MidnightBlue" href="https://cvhci.anthropomatik.kit.edu/people_1593.php">Prof. Alina Roitberg</a>.</li>
-            Now postdoctoral researcher at KIT.   
-
-            <li><a style="color:MidnightBlue">Xuan He</a>, PhD student at HNU (Topic: 3D Object Detection), 
-            Co-advised with <a style="color:MidnightBlue" href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a> and <a style="color:MidnightBlue" href="http://csee.hnu.edu.cn/people/yuanjin">Prof. Jin Yuan</a>.</li>
-            Now data scientist at VanGuard.
-        </ul>
-
-        <p><b style="font-size:120%;">Former Master Students</b></p>
-        <ul>
-            <li><a style="color:MidnightBlue">Daniel Bucher</a>, Master student at KIT (Co-advised with <a style="color:MidnightBlue" href="https://jamycheung.github.io/">Jiaming Zhang</a>),
-            (Topic: <a color="BLUE" href="https://www.researchgate.net/publication/376047644_Improving_Robustness_of_3D_Semantic_Segmentation_via_Transformer-based_Fusion_and_Knowledge_Distillation">Improving Robustness of 3D Semantic Segmentation via Transformer-based Fusion and Knowledge Distillation</a>).</li>
-
-            <li><a style="color:MidnightBlue">Yu Li</a>, Master student at KIT (Co-advised with <a style="color:MidnightBlue" href="https://github.com/KPeng9510">Kunyu Peng</a>),
-            (Topic: <a color="BLUE" href="https://arxiv.org/pdf/2303.13842.pdf">Fisheye Semantic Completion: Unifying Extrapolation and Semantic Completion</a>).</li>
-            Now data scientist at HiRain Technologies Europe.
-
-            <li><a style="color:MidnightBlue" href="https://github.com/Bryant-Teng">Fei Teng</a>, Master student at KIT (Co-advised with <a style="color:MidnightBlue" href="https://jamycheung.github.io/">Jiaming Zhang</a>),
-            (Topic: <a color="BLUE" href="https://arxiv.org/pdf/2307.15588">OAFuser: Towards Omni-Aperture Fusion for Light Field Semantic Segmentation</a>).</li>
-            Now PhD student at HNU.
-
-            <li><a style="color:MidnightBlue">Ke Cao</a>, Master student at KIT (Co-advised with <a style="color:MidnightBlue">Ze Wang</a>),
-            (Topic: <a color="BLUE" href="https://arxiv.org/pdf/2307.07763">Tightly-coupled LiDAR-visual SLAM Based on Geometric Features</a>).</li>
-            Now data scientist at Akkodis.
-
-            <li><a style="color:MidnightBlue" href="https://github.com/brucetend">Zhifeng Teng</a>, Master student at KIT (Co-advised with <a style="color:MidnightBlue" href="https://jamycheung.github.io/">Jiaming Zhang</a>),
-            (Topic: <a color="BLUE" href="https://arxiv.org/pdf/2303.11910">PanoBEV: Panoramic Semantic Mapping from Monocular Egocentric Images to Holistic Bird's Eye View</a>).</li>
-            Now data scientist at Solarlab Aiko Europe.
-
-            <li><a style="color:MidnightBlue">Zihan Chen</a>, Master student at KIT (Co-advised with <a style="color:MidnightBlue" href="https://h-lab.iism.kit.edu/team_knaeble.php">Merlin Knaeble</a> and <a style="color:MidnightBlue" href="https://www.access.kit.edu/english/287_1037.php">Dr. Thorsten Schwarz</a>),
-            (Topic: <a color="BLUE" href="https://yangkailun.com/publications/icchp2022_merlin.pdf">Accessible Chemical Structural Formulas through Interactive Labeling</a>).</li>
-            Now data scientist at ZF Automotive Technologies.
-
-            <li><a style="color:MidnightBlue" href="https://github.com/RuipingL/">Ruiping Liu</a>, Master student at KIT 
-            (Topic: <a color="BLUE" href="https://arxiv.org/pdf/2202.13393">Transformer-based Knowledge Distillation for Efficient Semantic Segmentation</a>).</li>
-            Now PhD student at KIT.
-
-            <li><a style="color:MidnightBlue" href="https://github.com/xinyu-laura">Xinyu Luo</a>, Master student at KIT 
-            (Topic: <a color="BLUE" href="https://arxiv.org/pdf/2203.10395">Improving Semantic Segmentation of Accident Scenes via Multi-Source Mixed Sampling and Meta-Learning with Transformers</a>).</li>
-            Now data scientist at Bank of Communication.
-
-            <li><a style="color:MidnightBlue" href="https://github.com/Qing-WANG-KIT">Qing Wang</a>, Master student at KIT (Co-advised with <a style="color:MidnightBlue" href="https://jamycheung.github.io/">Jiaming Zhang</a>),
-            (Topic: <a color="BLUE" href="https://arxiv.org/pdf/2203.09645">MatchFormer: Interleaving Attention in Transformers for Feature Matching</a>).</li>
-            Now data scientist at Huawei.
-
-            <li><a style="color:MidnightBlue">Wenyan Ou</a>, Master student at KIT 
-            (Topic: <a color="BLUE" href="https://arxiv.org/pdf/2204.01154">Dynamic Visual SLAM with Semantic Information for Seeing Impaired People</a>).</li>
-            Now data scientist at Continental.
-            
-            <li><a style="color:MidnightBlue" href="https://github.com/huaaaliu">Huayao Liu</a>, Master student at KIT 
-            (Topic: <a color="BLUE" href="https://arxiv.org/pdf/2107.03180">Indoor Scene Understanding for the Visually Impaired Based on Semantic Segmentation</a>).</li>
-            Now data scientist at NIO.
-
-            <li><a style="color:MidnightBlue" href="https://github.com/alexanderjaus/">Alexander Jaus</a>, Master student at KIT 
-            (Topic: <a color="BLUE" href="https://arxiv.org/pdf/2206.10711">Panoramic Panoptic Image Segmentation</a>).</li>
-            Now PhD student at KIT.
-
-            <li><a style="color:MidnightBlue">Chaoxiang Ma</a>, Master student at KIT (Co-advised with <a style="color:MidnightBlue" href="https://jamycheung.github.io/">Jiaming Zhang</a>),
-            (Topic: <a color="BLUE" href="https://arxiv.org/pdf/2108.06383">Unsupervised Domain Adaptation for Panoramic Semantic Segmentation</a>).</li>
-            Now data scientist at ByteDance.
-
-            <li><a style="color:MidnightBlue" href="https://github.com/Herrccc">Shuo Chen</a>, Master student at KIT 
-            (Topic: <a color="BLUE" href="https://arxiv.org/pdf/2103.00879">An Efficient Network for Scene Change Detection</a>).</li>
-            Now data scientist at Z-ONE.
-
-            <li><a style="color:MidnightBlue">Yingzhi Zhang</a>, Master student at KIT 
-            (Topic: <a color="BLUE" href="https://arxiv.org/pdf/2103.04136">Assisting the Visually Impaired Based on Scene Recognition and Semantic Segmentation</a>).</li>
-            Now data scientist at ZongmuTech.
-
-            <li><a style="color:MidnightBlue">Lukas Vojkovic</a>, Master student at KIT 
-            (Topic: <a color="BLUE">Development and Evaluation of a Computer Vision Based Navigation System for the Visually Impaired</a>).</li>
-
-            <li><a style="color:MidnightBlue" href="https://jamycheung.github.io/">Jiaming Zhang</a>, Master student at KIT 
-            (Topic: <a color="BLUE" href="https://arxiv.org/pdf/2112.05006">Semantic Segmentation in Accident Scenarios Based on Event Data</a>).</li>
-            Now PostDoctoral researcher at KIT.
-
-            <li><a style="color:MidnightBlue">Haoye Chen</a>, Master student at KIT 
-            (Topic: <a color="BLUE" href="https://yangkailun.com/publications/icchp2020_haoye.pdf">Semantic Visual Localization for Visually Impaired People</a>).</li>
-            Now data scientist at ZF Automotive Technologies.
-
-            <li><a style="color:MidnightBlue" href="https://github.com/harvey-wei">Wei Mao</a>, Master student at KIT 
-            (Topic: <a color="BLUE" href="https://arxiv.org/pdf/2103.04128">Efficient Panoptic Segmentation for Navigating the Visually Impaired</a>).</li>
-            Now data scientist at General Motors. 
-        </ul>
-
-            
-    </div>
+			<li><a href="javascript:void(0)">Wenxin Li</a>, Master student at HNU (Topic: Video Object Segmentation).
+			</li>
+
+			<li><a href="javascript:void(0)">Jiayi Le</a>, Master student at HNU (Topic: 6D Object Pose Estimation).
+				Co-advising with <a href="http://robotics.hnu.edu.cn/info/1071/1163.htm">Prof. Wenrui Chen</a>.
+			</li>
+
+			<li><a href="javascript:void(0)">Zhikun Zhou</a>, Master student at HNU (Topic: Panoramic Reconstruction).
+			</li>
+
+			<li><a href="javascript:void(0)">Pujun Guo</a>, Master student at HNU (Topic: Panoramic Generation).</li>
+
+			<li><a href="javascript:void(0)">Yuhang Wang</a>, Master student at HNU (Topic: Semantic Occupancy
+				Prediction).
+			</li>
+
+			<li><a href="javascript:void(0)">Di Kuang</a>, Master student at HNU (Topic: Scene Understanding).</li>
+
+			<li><a href="javascript:void(0)">Xuehan Wang</a>, Master student at HNU (Topic: Scene Understanding).</li>
+
+			<li><a href="https://github.com/FaterYU">Yu Zheng</a>, Master student at HNU (Topic: Scene Understanding).
+			</li>
+
+			<li><a href="javascript:void(0)">Weixing Feng</a>, Master student at HNU (Topic: Scene Understanding).</li>
+
+			<li><a href="javascript:void(0)">Meilin Chen</a>, Master student at HNU (Topic: Scene Understanding).</li>
+
+			<li><a href="javascript:void(0)">Yi Xie</a>, Master student at HNU (Topic: Scene Understanding).</li>
+		</ul>
+
+		<h3>External Students</h3>
+
+		<ul id="External">
+			<li><a href="https://github.com/MasterHow/">Hao Shi</a>, PhD student at ZJU (Topic: Temporal Scene
+				Understanding), Co-advising with <a href="http://wangkaiwei.org/indexeg.html">Prof. Kaiwei Wang</a>.
+			</li>
+
+			<li><a href="javascript:void(0)">Xiaoting Yin</a>, PhD student at ZJU (Topic: Event-based Vision),
+				Co-advising with <a href="http://wangkaiwei.org/indexeg.html">Prof. Kaiwei Wang</a>.
+			</li>
+
+			<li><a href="https://github.com/zju-jiangqi">Qi Jiang</a>, PhD student at ZJU (Topic: Computational Imaging
+				Solution to Minimalist Panoramic Optical System and Related Applications), Co-advising with <a
+						href="http://wangkaiwei.org/indexeg.html">Prof. Kaiwei Wang</a>.
+			</li>
+
+			<li><a href="https://github.com/flysoaryun/">Ze Wang</a>, PhD student at ZJU (Topic: Visual Odometry and
+				SLAM), Co-advising with <a href="http://wangkaiwei.org/indexeg.html">Prof. Kaiwei Wang</a> and <a
+						href="http://zju-fast.com/fei-gao/">Prof. Fei Gao</a>.
+			</li>
+
+			<li><a href="https://github.com/BambValley">Yufan Zhang</a>, PhD student at ZJU (Topic: Visual Odometry and
+				SLAM), Co-advising with <a href="http://wangkaiwei.org/indexeg.html">Prof. Kaiwei Wang</a>.
+			</li>
+
+			<li><a href="https://github.com/RuipingL/">Ruiping Liu</a>, PhD student at KIT (Topic: Seamless Efficiency
+				for Visual Perception in Assistive Systems), Co-advising with <a
+						href="https://cvhci.anthropomatik.kit.edu/~stiefel">Prof. Rainer Stiefelhagen</a> and <a
+						href="https://jamycheung.github.io/">Dr. Jiaming Zhang</a>.
+			</li>
+
+			<li><a href="https://junweizheng93.github.io/">Junwei Zheng</a>, PhD Student at KIT (Topic: Vision-Language
+				Navigation for Mobility Assistance), Co-advising with <a
+						href="https://cvhci.anthropomatik.kit.edu/~stiefel">Prof. Rainer Stiefelhagen</a> and <a
+						href="https://hci.anthropomatik.kit.edu/21_59.php">Prof. Kathrin Gerling</a>.
+			</li>
+
+			<li><a href="https://github.com/ZhonghuaYi">Zhonghua Yi</a>, PhD student at ZJU (Topic: Dense Correspondence
+				Estimation), Co-advising with <a href="http://wangkaiwei.org/indexeg.html">Prof. Kaiwei Wang</a>.
+			</li>
+
+			<li><a href="https://jasonfu1998.github.io/">Jia Fu</a>, PhD student at KTH (Topic: Robust Deep Learning for
+				Action Recognition).
+			</li>
+
+			<li><a href="https://github.com/Kratos-Wen">Di Wen</a>, PhD student at KIT (Topic: Human-Object Interaction
+				Detection), Co-advising with <a href="https://cvhci.anthropomatik.kit.edu/~stiefel">Prof. Rainer
+					Stiefelhagen</a> and <a href="https://cvhci.anthropomatik.kit.edu/people_2123.php">Dr. Kunyu
+					Peng</a>.
+			</li>
+
+			<li><a href="javascript:void(0)">Shaohua Gao</a>, PhD student at ZJU (Topic: Panoramic Imaging), Co-advising
+				with <a href="http://wangkaiwei.org/indexeg.html">Prof. Kaiwei Wang</a> and <a
+						href="https://person.zju.edu.cn/en/baijian">Prof. Jian Bai</a>.
+			</li>
+
+			<li><a href="https://github.com/wumengshenyou/">Yao Gao</a>, PhD student at ZJU (Topic: End-to-End
+				Computational Imaging), Co-advising with <a href="http://wangkaiwei.org/indexeg.html">Prof. Kaiwei
+					Wang</a>.
+			</li>
+
+			<li><a href="https://github.com/XiaolongQian/DCDI">Xiaolong Qian</a>, PhD student at ZJU (Topic:
+				Computational Aberration Correction), Co-advising with <a href="http://wangkaiwei.org/indexeg.html">Prof.
+					Kaiwei Wang</a>.
+			</li>
+		</ul>
+
+		<h3>Former PhD Students</h3>
+
+		<ul id="Fphd">
+			<li><a href="https://jamycheung.github.io/">Jiaming Zhang</a>, PhD student at KIT (Topic: <a
+					href="https://publikationen.bibliothek.kit.edu/1000164651">Scene Understanding for Intelligent
+				Transportation and Mobility Assistance Systems</a>), Co-advised with <a
+					href="https://cvhci.anthropomatik.kit.edu/~stiefel">Prof. Rainer Stiefelhagen</a> and <a
+					href="https://www.robots.ox.ac.uk/~phst/">Prof. Philip Torr.</a></li>
+			Now postdoctoral researcher at KIT.
+
+			<li><a href="https://cvhci.anthropomatik.kit.edu/people_2123.php">Kunyu Peng</a>, PhD student at KIT (Topic:
+				Towards Generalizable Deep Learning Based Human Action Recognition), Co-advising with <a
+						href="https://cvhci.anthropomatik.kit.edu/~stiefel">Prof. Rainer Stiefelhagen</a> and <a
+						href="https://cvhci.anthropomatik.kit.edu/people_1593.php">Prof. Alina Roitberg</a>.
+			</li>
+			Now postdoctoral researcher at KIT.
+
+			<li><a href="javascript:void(0)">Xuan He</a>, PhD student at HNU (Topic: 3D Object Detection), Co-advised
+				with <a href="http://robotics.hnu.edu.cn/info/1071/1515.htm">Prof. Zhiyong Li</a> and <a
+						href="http://csee.hnu.edu.cn/people/yuanjin">Prof. Jin Yuan</a>.
+			</li>
+			Now data scientist at VanGuard.
+		</ul>
+
+		<h3>Former Master Students</h3>
+
+		<ul id="Fmaster">
+			<li><a href="javascript:void(0)">Daniel Bucher</a>, Master student at KIT (Co-advised with <a
+					href="https://jamycheung.github.io/">Jiaming Zhang</a>),
+				(Topic: <a
+						href="https://www.researchgate.net/publication/376047644_Improving_Robustness_of_3D_Semantic_Segmentation_via_Transformer-based_Fusion_and_Knowledge_Distillation">Improving
+					Robustness of 3D Semantic Segmentation via Transformer-based Fusion and Knowledge Distillation</a>).
+			</li>
+
+			<li><a href="javascript:void(0)">Yu Li</a>, Master student at KIT (Co-advised with <a
+					href="https://github.com/KPeng9510">Kunyu Peng</a>),
+				(Topic: <a href="https://arxiv.org/pdf/2303.13842.pdf">Fisheye Semantic Completion: Unifying
+					Extrapolation and Semantic Completion</a>).
+			</li>
+			Now data scientist at HiRain Technologies Europe.
+
+			<li><a href="https://github.com/Bryant-Teng">Fei Teng</a>, Master student at KIT (Co-advised with <a
+					href="https://jamycheung.github.io/">Jiaming Zhang</a>),
+				(Topic: <a href="https://arxiv.org/pdf/2307.15588">OAFuser: Towards Omni-Aperture Fusion for Light Field
+					Semantic Segmentation</a>).
+			</li>
+			Now PhD student at HNU.
+
+			<li><a href="javascript:void(0)">Ke Cao</a>, Master student at KIT (Co-advised with <a
+					href="javascript:void(0)">Ze Wang</a>),
+				(Topic: <a href="https://arxiv.org/pdf/2307.07763">Tightly-coupled LiDAR-visual SLAM Based on Geometric
+					Features</a>).
+			</li>
+			Now data scientist at Akkodis.
+
+			<li><a href="https://github.com/brucetend">Zhifeng Teng</a>, Master student at KIT (Co-advised with <a
+					href="https://jamycheung.github.io/">Jiaming Zhang</a>),
+				(Topic: <a href="https://arxiv.org/pdf/2303.11910">PanoBEV: Panoramic Semantic Mapping from Monocular
+					Egocentric Images to Holistic Bird's Eye View</a>).
+			</li>
+			Now data scientist at Solarlab Aiko Europe.
+
+			<li><a href="javascript:void(0)">Zihan Chen</a>, Master student at KIT (Co-advised with <a
+					href="https://h-lab.iism.kit.edu/team_knaeble.php">Merlin Knaeble</a> and <a
+					href="https://www.access.kit.edu/english/287_1037.php">Dr. Thorsten Schwarz</a>),
+				(Topic: <a href="https://yangkailun.com/publications/icchp2022_merlin.pdf">Accessible Chemical
+					Structural Formulas through Interactive Labeling</a>).
+			</li>
+			Now data scientist at ZF Automotive Technologies.
+
+			<li><a href="https://github.com/RuipingL/">Ruiping Liu</a>, Master student at KIT
+				(Topic: <a href="https://arxiv.org/pdf/2202.13393">Transformer-based Knowledge Distillation for
+					Efficient Semantic Segmentation</a>).
+			</li>
+			Now PhD student at KIT.
+
+			<li><a href="https://github.com/xinyu-laura">Xinyu Luo</a>, Master student at KIT
+				(Topic: <a href="https://arxiv.org/pdf/2203.10395">Improving Semantic Segmentation of Accident Scenes
+					via Multi-Source Mixed Sampling and Meta-Learning with Transformers</a>).
+			</li>
+			Now data scientist at Bank of Communication.
+
+			<li><a href="https://github.com/Qing-WANG-KIT">Qing Wang</a>, Master student at KIT (Co-advised with <a
+					href="https://jamycheung.github.io/">Jiaming Zhang</a>),
+				(Topic: <a href="https://arxiv.org/pdf/2203.09645">MatchFormer: Interleaving Attention in Transformers
+					for Feature Matching</a>).
+			</li>
+			Now data scientist at Huawei.
+
+			<li><a href="javascript:void(0)">Wenyan Ou</a>, Master student at KIT
+				(Topic: <a href="https://arxiv.org/pdf/2204.01154">Dynamic Visual SLAM with Semantic Information for
+					Seeing Impaired People</a>).
+			</li>
+			Now data scientist at Continental.
+
+			<li><a href="https://github.com/huaaaliu">Huayao Liu</a>, Master student at KIT
+				(Topic: <a href="https://arxiv.org/pdf/2107.03180">Indoor Scene Understanding for the Visually Impaired
+					Based on Semantic Segmentation</a>).
+			</li>
+			Now data scientist at NIO.
+
+			<li><a href="https://github.com/alexanderjaus/">Alexander Jaus</a>, Master student at KIT
+				(Topic: <a href="https://arxiv.org/pdf/2206.10711">Panoramic Panoptic Image Segmentation</a>).
+			</li>
+			Now PhD student at KIT.
+
+			<li><a href="javascript:void(0)">Chaoxiang Ma</a>, Master student at KIT (Co-advised with <a
+					href="https://jamycheung.github.io/">Jiaming Zhang</a>),
+				(Topic: <a href="https://arxiv.org/pdf/2108.06383">Unsupervised Domain Adaptation for Panoramic Semantic
+					Segmentation</a>).
+			</li>
+			Now data scientist at ByteDance.
+
+			<li><a href="https://github.com/Herrccc">Shuo Chen</a>, Master student at KIT
+				(Topic: <a href="https://arxiv.org/pdf/2103.00879">An Efficient Network for Scene Change Detection</a>).
+			</li>
+			Now data scientist at Z-ONE.
+
+			<li><a href="javascript:void(0)">Yingzhi Zhang</a>, Master student at KIT
+				(Topic: <a href="https://arxiv.org/pdf/2103.04136">Assisting the Visually Impaired Based on Scene
+					Recognition and Semantic Segmentation</a>).
+			</li>
+			Now data scientist at ZongmuTech.
+
+			<li><a href="javascript:void(0)">Lukas Vojkovic</a>, Master student at KIT
+				(Topic: <a href="javascript:void(0)">Development and Evaluation of a Computer Vision Based Navigation
+					System for the Visually Impaired</a>).
+			</li>
+
+			<li><a href="https://jamycheung.github.io/">Jiaming Zhang</a>, Master student at KIT
+				(Topic: <a href="https://arxiv.org/pdf/2112.05006">Semantic Segmentation in Accident Scenarios Based on
+					Event Data</a>).
+			</li>
+			Now PostDoctoral researcher at KIT.
+
+			<li><a href="javascript:void(0)">Haoye Chen</a>, Master student at KIT
+				(Topic: <a href="https://yangkailun.com/publications/icchp2020_haoye.pdf">Semantic Visual Localization
+					for Visually Impaired People</a>).
+			</li>
+			Now data scientist at ZF Automotive Technologies.
+
+			<li><a href="https://github.com/harvey-wei">Wei Mao</a>, Master student at KIT
+				(Topic: <a href="https://arxiv.org/pdf/2103.04128">Efficient Panoptic Segmentation for Navigating the
+					Visually Impaired</a>).
+			</li>
+			Now data scientist at General Motors.
+		</ul>
+	</div>
+</div>
+
+<script src="script/navbar.js"></script>
+<script src="script/team.js"></script>
 </body>
 </html>
-

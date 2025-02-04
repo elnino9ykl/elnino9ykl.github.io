@@ -10,8 +10,8 @@
 	}
 
 	#aside {
-		width: 90vw;
-		text-align: center;
+		width: 30vw;
+		margin-top: 1em;
 	}
 
 	#main {
@@ -19,16 +19,48 @@
 	}
 
 	/* Aside */
-	#aside {
-		min-height: 8em;
-		font-size: 0.6em;
-	}
-
 	#aside > img {
 		width: 20vw;
-		max-width: 6em;
-		margin-left: 5vw;
+		padding-left: 5vw;
+		padding-right: 5vw;
+		padding-bottom: 0.5em;
 		float: left;
+	}
+
+	#aside > p {
+		font-size: 3vw;
+		line-height: 3vw;
+		height: 3vw;
+		overflow-wrap: anywhere;
+		width: 25vw;
+		padding-left: 2.5vw;
+		padding-right: 2.5vw;
+		float: left;
+	}
+
+	#aside > p > #address {
+		display: none;
+	}
+
+	#aside > #visitor {
+		margin-top: 1em;
+		width: 100%;
+		float: left;
+		text-align: center;
+	}
+
+	#aside > #visitor > a > img {
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#aside > #visitor > a {
+		font-size: 3vw;
+	}
+
+	#aside-email {
+		padding-bottom: 1em;
 	}
 
 	/* Main */
@@ -122,6 +154,7 @@
 		margin-left: 2.5em;
 		margin-right: 2.5em;
 		margin-top: 20px;
+		padding-bottom: 1em;
 	}
 
 	/* Main */
@@ -204,7 +237,8 @@
 
 	/* Aside */
 	#aside {
-		/*min-height: 30vw;*/
+		width: 30vw;
+		margin-top: 1em;
 	}
 
 	#aside > img {
@@ -212,6 +246,23 @@
 		padding-left: 5vw;
 		padding-right: 5vw;
 		padding-bottom: 1em;
+		float: left;
+	}
+
+	#aside > p {
+		font-size: 0.85em;
+		line-height: 0.5em;
+		width: 30vw;
+		text-align: center;
+		float: left;
+	}
+
+	#aside > p > #address {
+		display: none;
+	}
+
+	#aside > #visitor {
+		width: 100%;
 		float: left;
 	}
 
@@ -303,6 +354,22 @@ body {
 	text-decoration: underline;
 }
 
+a.pub-fold, a.pub-fold:visited {
+	color: #0088ff;
+	font-size: 0.8em;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a.pub-fold:hover {
+	color: #0088ff;
+	text-decoration: #0088ff 2px underline;
+}
+
+.dashset {
+	display: block;
+}
+
 .dash > p > span {
 	color: #2222ff;
 }
@@ -328,4 +395,41 @@ body {
 #publications a:not([class]), #publications a:not([class]):visited {
 	color: #0088ff;
 	text-decoration: underline;
+}
+
+#backTop {
+	width: 2.5em;
+	height: 2.5em;
+	position: fixed;
+	bottom: 5vw;
+	right: 5vw;
+	text-align: center;
+	line-height: 1.25em;
+	border-radius: 0.5em;
+	box-shadow: 0 0 4px #000000a0;
+	display: none;
+}
+
+#backTop:hover {
+	background-color: #aaaaaa80;
+}
+
+#toast {
+	width: 4.5em;
+	height: 2em;
+	position: fixed;
+	top: 20vh;
+	left: 50vw;
+	text-align: center;
+	line-height: 2em;
+	border-radius: 0.5em;
+	box-shadow: 0 0 4px #000000a0;
+	background-color: #aaaaaaf0;
+	color: #2b2b3b;
+	transition: opacity 0.3s ease;
+	opacity: 0;
+}
+
+#toast.show {
+	opacity: 1;
 }

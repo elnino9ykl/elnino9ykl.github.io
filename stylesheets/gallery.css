@@ -1,0 +1,218 @@
+/* 适配手机 */
+@media only screen and (max-width: 768px) {
+	#container {
+		column-count: 3;
+		margin-top: 40px;
+		width: 96vw;
+		margin-left: calc(2vw - 8px);
+		margin-right: calc(2vw - 8px);
+		padding-top: 0.5em;
+		overflow-x: hidden;
+	}
+
+	.dash {
+		width: 32vw;
+		padding-top: 1em;
+		position: relative;
+	}
+
+	.dash-display {
+		width: 30vw;
+		position: relative;
+		display: inline-block;
+	}
+
+	.dash-description {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 30vw;
+		margin-top: 1em;
+		background: rgba(0, 0, 0, 0.7);
+		color: white;
+		display: flex;
+		align-items: center;
+		opacity: 0;
+		transition: opacity 0.3s ease;
+		pointer-events: none;
+	}
+
+	.dash-description > span {
+		width: 26vw;
+		margin-left: 2vw;
+		margin-right: 2vw;
+		font-size: 3vw;
+		text-align: center;
+	}
+
+	.dash.show > .dash-description {
+		transition: opacity 0.5s ease;
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.dash-display > img {
+		width: 30vw;
+	}
+
+	.date {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		font-size: 2vw;
+		text-align: center;
+		background: rgba(0, 0, 0, 0.5);
+		color: white;
+		padding: 5px 0;
+	}
+}
+
+/* 适配电脑 */
+@media only screen and (min-width: 1025px) {
+	#container {
+		width: 90vw;
+		padding-left: 5vw;
+		padding-right: 5vw;
+		margin-top: calc(var(--header-height) + 1em);
+		column-count: 3;
+	}
+
+	.dash {
+		width: 30vw;
+		padding-top: 1em;
+		position: relative;
+	}
+
+	.dash-display {
+		width: 25vw;
+		position: relative;
+		display: inline-block;
+	}
+
+	.dash-description {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 25vw;
+		margin-top: 1em;
+		background: rgba(0, 0, 0, 0.7);
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0;
+		transition: opacity 0.3s ease;
+		pointer-events: none;
+	}
+
+	.dash-description > span {
+		width: 80%;
+		font-size: 1em;
+		text-align: center;
+	}
+
+	.dash:hover > .dash-description {
+		transition: opacity 0.5s ease;
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.dash-display > img {
+		width: 100%;
+	}
+
+	.date {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		font-size: 1em;
+		text-align: center;
+		background: rgba(0, 0, 0, 0.5);
+		color: white;
+		padding: 5px 0;
+	}
+}
+
+/* 适配其他设备 */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	#container {
+		width: 90vw;
+		padding-left: 5vw;
+		padding-right: 5vw;
+		margin-top: calc(var(--header-height) + 1em);
+		column-count: 3;
+	}
+
+	.dash {
+		width: 30vw;
+		padding-top: 1em;
+		position: relative;
+	}
+
+	.dash-display {
+		width: 25vw;
+		position: relative;
+		display: inline-block;
+	}
+
+	.dash-description {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 25vw;
+		margin-top: 1em;
+		background: rgba(0, 0, 0, 0.7);
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0;
+		transition: opacity 0.3s ease;
+		pointer-events: none;
+	}
+
+	.dash-description > span {
+		width: 80%;
+		font-size: 1em;
+		text-align: center;
+	}
+
+	.dash:hover > .dash-description {
+		transition: opacity 0.5s ease;
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.dash-display > img {
+		width: 100%;
+	}
+
+	.date {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		font-size: 1em;
+		text-align: center;
+		background: rgba(0, 0, 0, 0.5);
+		color: white;
+		padding: 5px 0;
+	}
+}
+
+/* 通用 */
+:root {
+	--header-height: 75px;
+}
+
+body {
+	overflow-x: hidden;
+}
