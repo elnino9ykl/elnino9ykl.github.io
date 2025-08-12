@@ -45,13 +45,13 @@ for (const originalDiv of pubDivs) {
 
 // Publications 部分折叠
 const pubFolds = document.getElementsByClassName("pub-fold");
-for (const index in pubFolds) {
-	pubFolds[+index].addEventListener("click", function () {
-		const display = document.getElementsByClassName("dashset")[+index].style.display;
+Array.from(pubFolds).forEach((item, index) => {
+	item.addEventListener("click", () => {
+		const display = document.getElementsByClassName("dashset")[index].style.display;
 		document.getElementsByClassName("dashset")[+index].style.display = (display === "none" ? "block" : "none");
-		pubFolds[+index].innerHTML = (pubFolds[+index].innerHTML === "折叠" ? "展开" : "折叠");
+		item.innerHTML = (item.innerHTML === "折叠" ? "展开" : "折叠");
 	});
-}
+});
 
 // Publications 计数
 // const dashsets = document.getElementsByClassName("dashset");

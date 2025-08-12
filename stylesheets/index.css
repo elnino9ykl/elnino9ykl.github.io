@@ -405,11 +405,12 @@ a.pub-fold:hover {
 	position: fixed;
 	bottom: 5vw;
 	right: 5vw;
+	padding: 4px;
 	text-align: center;
 	line-height: 1.25em;
 	border-radius: 0.5em;
 	box-shadow: 0 0 4px #000000a0;
-	display: none;
+	color: #2b2b3b;
 }
 
 #backTop:hover {
